@@ -1,0 +1,8 @@
+
+
+
+-stripnativelibrarysections !jni/arm64-v8a/libcadb.so,!jni/armeabi-v7a/libcadb.so,!lib/arm64-v8a/libcadb.so,!lib/armeabi-v7a/libcadb.so,dummyfile
+
+
+-keepresourcefiles com/b/e/d/a-,com/b/e/d/b-,com/ingeek/security/d/a/c-,com/ingeek/security/d/a/d-,jni/arm64-v8a/libcadb.so,jni/armeabi-v7a/libcadb.so,lib/arm64-v8a/libcadb.so,lib/armeabi-v7a/libcadb.so
+

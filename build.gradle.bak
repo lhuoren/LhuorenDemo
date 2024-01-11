@@ -1,0 +1,37 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+//    ext.kotlin_version = '1.7.20'
+    ext.kotlin_version = '1.6.10'
+//    ext.kotlin_version = '1.8.10'
+//    ext.kotlin_version = '1.9.0'
+
+
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+
+    dependencies {
+        //greedao
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.3.1'
+        // ButterKnife
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:10.2.1'
+        //kotlin
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+plugins {
+    id 'com.android.application' version '8.0.2' apply false
+    id 'com.android.library' version '8.0.2' apply false
+    id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
+}
+
+apply from: 'appconfig.gradle'
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorTrans">#00000000</color>
+    <color name="gesture_hit">#181A24</color>
+    <color name="gesture_error">#EC5042</color>
+
+
+    <color name="color_FAFDFF">#FAFDFF</color>
+    <color name="color_CDEEFF">#CDEEFF</color>
+    <color name="color_00B9EF">#00B9EF</color>
+    <color name="color_0094BF">#0094BF</color>
+    <color name="color_A0DDFF">#A0DDFF</color>
+    <color name="color_D6F1FF">#D6F1FF</color>
+    <color name="color_F2FBFF">#F2FBFF</color>
+    <color name="color_181A24">#181A24</color>
+    <color name="color_31373E">#31373E</color>
+    <color name="color_B2E5FF">#B2E5FF</color>
+    <color name="color_A8E0FF">#A8E0FF</color>
+    <color name="color_F8FDFF">#F8FDFF</color>
+    <color name="color_E2F5FF">#E2F5FF</color>
+    <color name="color_44BD2B">#44BD2B</color>
+    <color name="color_C5EBFF">#C5EBFF</color>
+    <color name="color_EBF8FF">#EBF8FF</color>
+    <color name="color_1F212E">#1F212E</color>
+    <color name="color_car">#000000</color>
+    <color name="color_99FFFFFF">#99FFFFFF</color>
+    <color name="color_66FFFFFF">#66FFFFFF</color>
+    <color name="color_66000000">#66000000</color>
+    <color name="color_4D000000">#4D000000</color>
+    <color name="color_FFB800">#FFB800</color>
+    <color name="color_26BDC3">#26BDC3</color>
+    <color name="color_72DFE3">#72DFE3</color>
+
+    <color name="color_AB1C1C1E">#AB1C1C1E</color>
+    <color name="color_1C1C1E">#1C1C1E</color>
+    <color name="color_FFF5F7FA">#FFF5F7FA</color>
+    <color name="color_00FFFFFF">#00FFFFFF</color>
+
+    <color name="color_d9d9d9">#d9d9d9</color>
+    <color name="color_FF000000">#FF000000</color>
+    <color name="color_E5FFFFFF">#E5FFFFFF</color>
+    <color name="translucent_black_80">#33000000</color>
+
+
+</resources>

@@ -1,0 +1,263 @@
+//app的全局配置在这里
+ext {
+    //bugly 上修复问题后+1
+    fixBugNum = 5
+    ////////////////生产环境////////////////////////
+    applicationId = 'com.lhuoren.demo'
+    versionCode = 33350
+    versionName = '3.33.5'
+    pro_growingio_project_id = '800da66c3006f212'
+    pro_growingio_url_scheme = 'growing.a9ef0ee956a6eb60'
+    ////////////////生产环境////////////////////////
+
+    ////////////////pre环境////////////////////////
+    pre_applicationId = 'com.lhuoren.demo.pre'
+    pre_versionCode = 33350
+    pre_versionName = '3.33.5'
+    pre_growingio_project_id = '9547ce45e7a29e47'
+    pre_growingio_url_scheme = 'growing.8734db2f7156510f'
+    ////////////////stg环境////////////////////////
+
+    ////////////////测试环境////////////////////////
+    test_applicationId = 'com.lhuoren.demo.test'
+    test_versionCode = 6145
+    test_versionName = '3.12.5'
+    test_growingio_project_id = '9547ce45e7a29e47'
+    test_growingio_url_scheme = 'growing.8734db2f7156510f'
+    ////////////////测试环境////////////////////////
+
+    ////////////////开发环境////////////////////////
+    dev_applicationId = 'com.lhuoren.demo.dev'
+    dev_versionCode = 6145
+    dev_versionName = '3.12.5'
+    dev_growingio_project_id = '000'
+    dev_growingio_url_scheme = '0000'
+    ////////////////开发环境////////////////////////
+
+    //强烈推荐总是使用最新的 SDK 进行编译（默认就是最新的）
+    //修改 compileSdkVersion 不会改变运行时的行为。当您修改了 compileSdkVersion 的时候，可能会出现新的编译警告、编译错误，
+    //但新的 compileSdkVersion 不会被包含到 APK 中：它纯粹只是在编译的时候使用。
+    globalCompileSdkVersion = 33
+    //targetSdkVersion 是 Android 提供向前兼容的主要依据,如果平台的API Level高于您的应用程序中的targetSdkVersion属性指定的值，系统会开启兼容行为来确保您的应用程序继续以期望的
+    //形式来运行，于加入七陌客服的时候从28将为26了，因为26以上的service改为要前端了，而七陌sdk没有更新，所以不降到26会导致崩溃。
+    globalTargetSdkVersion = 26 //这里要用26，不能用28，否则好多地方需要添加FLAG_ACTIVITY_NEW_TASK
+    //这个就是程序运行的最低的要求的Sdk版本号，在低于这个版本号的手机设备上无法安装。 引入银基车控蓝牙sdk更改为23
+    globalMinSdkVersion = 24
+    supportLibraryVersion = "1.3.1"
+    kotlinVersion = "1.6.10"
+//    kotlinVersion = "1.8.10"
+//    kotlinVersion = "1.7.20"
+//    kotlinVersion = "1.9.0"
+
+    glideVersion = "4.11.0"
+
+    dokit_version = "3.7.1"
+
+    compose_version = '1.1.1'
+//    compose_version = '1.3.2'
+//    compose_version = '1.4.3'
+    accompanist_version = '0.15.0'
+
+    lifecycle_version = "2.4.0"
+    nav_version = "2.2.0"
+
+    /*=================================常用的引用============================================*/
+    //supportLibVersion 的头数字是和targetSdkVersion 版本一样的。
+    androidDependencies = [
+            appcompat_v7    : "androidx.appcompat:appcompat:${supportLibraryVersion}",
+            recyclerview    : 'androidx.recyclerview:recyclerview:1.2.1',
+//            constraintlayout: 'androidx.constraintlayout:constraintlayout:2.1.3',
+            constraintlayout: 'androidx.constraintlayout:constraintlayout:2.0.2',
+            material        : "com.google.android.material:material:1.2.1",
+            flexbox         : 'com.google.android:flexbox:1.1.0',
+            annotation      : 'androidx.annotation:annotation:1.1.0',
+            multidex        : 'com.android.support:multidex:1.0.1',
+            kotlin          : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}",
+            coreKtx         : "androidx.core:core-ktx:1.8.0",
+            viewpager2      : "androidx.viewpager2:viewpager2:1.0.0",
+            activity_kt     : 'androidx.activity:activity-ktx:1.2.4',
+            espresso_core   :'androidx.test.espresso:espresso-core:3.4.0',
+    ]
+
+    /*=================================module中用到的引用============================================*/
+    globalDependencies = [
+            //网络 协程支持
+            okhttp                        : 'com.squareup.okhttp3:okhttp:3.14.9',
+            retrofit                      : 'com.squareup.retrofit2:retrofit:2.9.0',
+            converter_gson                : 'com.squareup.retrofit2:converter-gson:2.9.0',
+            adapter_rxjava2               : 'com.squareup.retrofit2:adapter-rxjava2:2.9.0',
+            logging_interceptor           : 'com.squareup.okhttp3:logging-interceptor:3.4.1',
+            ConvenientBanner              : 'com.bigkoo:convenientbanner:2.1.5',
+            logger                        : 'com.orhanobut:logger:2.2.0',
+            //权限
+            rxpermissions                 : 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar',
+            //指示器
+            MagicIndicator                : 'com.github.hackware1993:MagicIndicator:1.5.0',
+            glide                         : "com.github.bumptech.glide:glide:${glideVersion}",
+            glide_annotations             : "com.github.bumptech.glide:annotations:${glideVersion}",
+            glide_compiler                : "com.github.bumptech.glide:compiler:${glideVersion}",
+            glide_okhttp3_integration     : "com.github.bumptech.glide:okhttp3-integration:${glideVersion}",
+            glide_trans                   : 'jp.wasabeef:glide-transformations:3.3.0',
+
+            BaseRecyclerViewAdapterHelper : 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.46',
+            //rxjava
+            rxandroid                     : 'io.reactivex.rxjava2:rxandroid:2.0.2',
+            rxjava                        : 'io.reactivex.rxjava2:rxjava:2.0.2',
+            rxlifecycle                   : 'com.trello.rxlifecycle3:rxlifecycle:3.0.0',
+            rxlifecycle_components        : 'com.trello.rxlifecycle3:rxlifecycle-components:3.0.0',
+            rxbinding                     : 'com.jakewharton.rxbinding3:rxbinding:3.1.0',
+            //分享
+            wechat_sdk_android_without_mta: 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.6.4',
+            SwipeDelMenuLayout            : 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.3.0',
+            //小红点
+            badgeview                     : 'q.rorbin:badgeview:1.1.3',
+            weiboSdk                      : 'io.github.sinaweibosdk:core:11.11.1@aar',
+            switch_button                 : 'com.kyleduo.switchbutton:library:2.0.0',
+            //app更新
+            update_app                    : 'com.qianwen:update-app:3.5.2',
+            //文件下载
+            filedownloader                : 'com.liulishuo.filedownloader:library:1.7.6',
+            tencent_bugly                 : 'com.tencent.bugly:crashreport:3.2.32',
+            //stetho
+            stetho_okhttp3                : 'com.facebook.stetho:stetho-okhttp3:1.5.1',
+            leakcanary                    : 'com.squareup.leakcanary:leakcanary-android:2.0-alpha-2',
+            //长图显示，图片手势放大
+            scaleImage                    : "com.davemorrissey.labs:subsampling-scale-image-view:3.10.0",
+            //数据库
+            greendao                      : "org.greenrobot:greendao:3.3.0",
+            //ARouter
+            AROUTER                       : 'com.alibaba:arouter-api:1.3.1',
+            AROUTER_COMPILER              : 'com.alibaba:arouter-compiler:1.1.4',
+//            AROUTER_COMPILER              : 'com.alibaba:arouter-compiler:1.5.2',
+            lottie                        : 'com.airbnb.android:lottie:5.1.1',
+            jsbridge                      : 'com.github.lzyzsd:jsbridge:1.0.4',
+            wheelview                     : 'com.contrarywind:wheelview:4.0.9',
+
+            shimmerlayout                 : 'io.supercharge:shimmerlayout:2.1.0',
+            imagezoom                     : 'it.sephiroth.android.library.imagezoom:library:1.0.4',
+            tinypinyin                    : 'com.github.promeg:tinypinyin:1.0.0', // ~80KB
+            ijkplayerJava                 : 'tv.danmaku.ijk.media:ijkplayer-java:0.8.8',
+            ijkplayerArmv7a               : 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.8.8',
+            ijkplayerArmv64               : 'tv.danmaku.ijk.media:ijkplayer-arm64:0.8.8',
+            zxing                         : 'com.google.zxing:core:3.3.3',
+            wheelview                     : 'com.contrarywind:wheelview:4.0.9',
+            wheelview_picker              : 'com.contrarywind:Android-PickerView:4.1.9',
+            google_vr                     : 'com.google.vr:sdk-panowidget:1.80.0',
+            // RxAndroidBle
+            RxAndroidBle                  : "com.polidea.rxandroidble2:rxandroidble:1.10.0",
+            //mega log utils
+            elvishew_xlog                 : "com.elvishew:xlog:1.10.1",
+            //GrowingIO 埋点 SDK
+            growingio                     : 'com.growingio.android:vds-android-agent:autotrack-2.10.1',
+            // 下拉刷新
+            smartrefresh                  : 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.2',
+            gson                          : 'com.google.code.gson:gson:2.8.5',
+            //x5浏览器内核
+            tbssdk                        : 'com.tencent.tbs.tbssdk:sdk:43903',
+            xlog                          : 'com.tencent.mars:mars-xlog:1.2.3',
+            huawei_hapticskit             : 'com.huawei.devices:hapticskit:1.0.0.300',
+            lifecycle_compiler            : "androidx.lifecycle:lifecycle-compiler:${lifecycle_version}",
+            mmkv                          : 'com.tencent:mmkv-static:1.2.15',
+            auto_service_annotations      : 'com.google.auto.service:auto-service-annotations:1.0-rc7',
+            auto_service_processor        : 'com.google.auto.service:auto-service:1.0-rc7',
+            lifecycle_extensions          : "androidx.lifecycle:lifecycle-extensions:2.3.1",
+
+            //轮盘时间选择器
+            timerangepicker               : 'nl.joery.timerangepicker:timerangepicker:1.0.0',
+
+            blackj_utils                  : 'com.blankj:utilcodex:1.31.0',
+            //腾讯直播sdk
+            LiteAVSDK_Professional        : 'com.tencent.liteav:LiteAVSDK_Professional:11.1.0.13111',
+//            LiteAVSDK_Professional        : 'com.tencent.liteav:LiteAVSDK_Professional:9.5.11171',
+
+            //百度地图sdk - map
+            BaiduMapSDK_Map               : 'com.baidu.lbsyun:BaiduMapSDK_Map:7.4.0',
+            BaiduMapSDK_LOCATION          : 'com.baidu.lbsyun:BaiduMapSDK_Location:9.1.8',
+            BaiduMapSDK_SEARCH            : 'com.baidu.lbsyun:BaiduMapSDK_Search:7.4.0',
+            BaiduMapSDK_UTIL              : 'com.baidu.lbsyun:BaiduMapSDK_Util:7.4.0',
+
+
+            //高德地图sdk
+            AMAP_MAP                      : 'com.amap.api:3dmap:9.5.0',
+            AMAP_LOCATION                 : 'com.amap.api:location:6.2.0',
+            AMAP_SEARCH                   : 'com.amap.api:search:9.4.5',
+
+            //解析HTML
+            JSOUP                         : 'org.jsoup:jsoup:1.14.3',
+            junittest                     : 'junit:1.1.3',
+            junit                         : 'junit:junit:4.13.2'
+    ]
+
+    mvvmDependencies = [
+
+            navigation_fragment: "androidx.navigation:navigation-fragment-ktx:$nav_version",
+            fragment_ktx       : "androidx.fragment:fragment-ktx:1.3.1",
+            navigation_ktx     : "androidx.navigation:navigation-ui-ktx:$nav_version",
+            gson               : "com.google.code.gson:gson:2.8.5",
+            ktx                : "androidx.core:core-ktx:1.8.0",
+            material           : "com.google.android.material:material:1.2.1",
+            appcompat          : "androidx.appcompat:appcompat:${supportLibraryVersion}",
+            kotlin             : "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion",
+            // ViewModel
+            lifecycle_viewmodel: "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version",
+            // LiveData
+            lifecycle_livedata : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version",
+            // Lifecycles only (without ViewModel or LiveData)
+            lifecycle_runtime  : "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version",
+            lifecycle_java8    : "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+    ]
+    engineer_name = getBuildSystemUser()
+    gitVersionCode = gitGitVersionCode()
+    gitVersionDesc = getGitVersionDesc()
+    gitLastCommitId = getGitLastCommitId()
+}
+//获取PC用户名
+def getBuildSystemUser() {
+    def win = "USERNAME"
+    def mac = "USER"
+    def flavorName = System.getenv(mac)
+
+    if (flavorName == null || flavorName.isEmpty()) {
+        flavorName = System.getenv(win)
+    }
+    println("PC用户名:" + flavorName)
+    return flavorName
+}
+
+def gitGitVersionCode() {
+    try {
+        def gv = 'git rev-list HEAD --first-parent --count'.execute().text.trim().toInteger()
+        println("gitVersionCode------>" + gv)
+        return gv
+    }
+    catch (ignored) {
+        return 0
+    }
+}
+
+def getGitLastCommitId() {
+    try {
+        def gv = 'git rev-parse --short HEAD'.execute().text.trim()
+        println("lastCommitId------>" + gv)
+        return gv
+    }
+    catch (ignored) {
+        return ""
+    }
+}
+
+def getGitVersionDesc() {
+    //根据分支名获取版本描述
+    def branch_name = 'git symbolic-ref --short -q HEAD'.execute().text.trim()
+    if (project.hasProperty('ANDROID_BRANCH')) {
+        branch_name = ANDROID_BRANCH
+    }
+    println("branch------>" + branch_name)
+    int first = branch_name.indexOf("hycan-") + 6
+    int last = branch_name.lastIndexOf("-android")
+    if (last > first) {
+        return "(" + branch_name.substring(first, last) + ")"
+    } else {
+        return ""
+    }
+}

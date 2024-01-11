@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/loTopBarBackgound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/loTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivTopBarBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="onTopBarBack"
+            android:paddingLeft="@dimen/padding_topbar_item"
+            android:paddingRight="@dimen/padding_topbar_item"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_topbar_back_white" />
+
+
+        <ImageView
+            android:id="@+id/ivTopBarRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:onClick="onTopBarRightClick"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:scaleType="center" />
+
+        <ImageView
+            android:id="@+id/ivSecondTopBarRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/ivTopBarRight"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="30dp"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tvTopBarLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="onTopBarBack"
+            android:paddingLeft="@dimen/padding_topbar_item"
+            android:paddingRight="@dimen/padding_topbar_item"
+            android:textSize="@dimen/dimen_16"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvTopBarRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="center"
+
+            android:onClick="onTopBarRightClick"
+            android:paddingLeft="@dimen/padding_topbar_item"
+            android:paddingRight="@dimen/padding_topbar_item"
+            android:textSize="@dimen/dimen_16" />
+
+        <View
+            android:id="@+id/dividerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_topbar_divider"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line" />
+
+        <com.gac.nioapp.test.view.MediumBoldTextView
+            android:id="@+id/tvTopBarTitle"
+            android:layout_width="183dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textSize="@dimen/size_topbar_title"
+            tools:text="测试标题" />
+    </RelativeLayout>
+</RelativeLayout>

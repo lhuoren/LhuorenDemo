@@ -1,0 +1,1863 @@
+
+
+
+-keeppackagenames com.ingeek.key.components.implementation.log,com.ingeek.key.config,com.ingeek.key.i.c.e,com.e.c,com.ingeek,com.e.c.c.c,com.ingeek.key.cache,com.ingeek.key.business,com.ingeek.security.c.e,com.ingeek.key.i.c
+-adaptresourcefilecontents !jni/arm64-v8a/libc312.so,!jni/armeabi-v7a/libc312.so,!lib/arm64-v8a/libc312.so,!lib/armeabi-v7a/libc312.so,dummyfile
+
+
+
+
+-keep class com.e.c.O00000o0 {
+    <init>(java.io.InputStream, int, byte[], byte[][]);
+}
+
+-keep class com.e.c.O00000oO {
+    byte[][] O00000o0(int);
+}
+
+-keep class com.e.c.O0000Oo {
+    <init>(java.io.InputStream, int[], int, byte[], int, int);
+}
+
+-keep class com.e.c.O0000OOo {
+    void O00000oO(byte[], byte, long);
+}
+
+-keep class com.e.c.O0000O0o {
+    int O000000o;    java.lang.Object O00000o0;}
+
+-keep class com.e.c.O0000Oo0 {
+    int O00000oO;    int O00000Oo;    char O00000o0;    char O000000o;    java.lang.Object O00000o;}
+
+-keep class com.e.c.O0000o0 {
+    int O00000oO;    java.lang.Object O00000Oo;}
+
+-keep class com.e.c.c.c.a$O00000o0 {
+    void O00000oO(int, int);
+}
+
+-keep class com.ingeek.O00000oO {
+    boolean O00000Oo;    java.lang.Boolean O00000o;}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.O00000oO {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.e.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.alive.O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowshrinking,allowobfuscation class com.ingeek.key.alive.third.oppo.OppoWrapper {
+    void O00000oO();
+}
+
+-keepclassmembers,allowshrinking,allowobfuscation class com.ingeek.key.alive.third.vivo.VivoWrapper {
+    void O00000oO();
+}
+
+-keepclassmembers,allowshrinking,allowobfuscation class com.ingeek.key.alive.third.xiaomi.XiaomiWrapper {
+    void O00000oO();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.c.O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.b.O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.b.O00000Oo$O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.b.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.a.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.e.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.e.O00000o0$O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.e.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.e.O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.e.O00000o {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.key.ble.e.O0000Oo
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.e.O0000Oo0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.e.O0000OOo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.e.a.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.e.a.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.e.a.O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.e.b.O00000oO$4 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.d.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.d.O00000o$2 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.i.O00000oO {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.i.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.g.O00000Oo {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.key.ble.g.O000000o
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.g.O000000o$O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.ble.f.O000000o$O00000oO {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.O000000o {
+    <init>();
+}
+
+-keep class com.ingeek.key.business.O00000o0 {
+    android.content.Context O00000o0();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.O00000oO {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.O0000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.O0000OOo {
+    <init>();
+}
+
+-keepclassmembers,allowshrinking,allowobfuscation class com.ingeek.key.business.O0000OOo {
+    void O00000oO();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.O0000o00 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.O0000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.O0000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.d.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.d.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.d.O000000o$O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.d.O0000O0o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.c.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.calibrate.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.calibrate.O00000oO {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.calibrate.a.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.calibrate.a.O00000o0$O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.calibrate.multi.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.calibrate.multi.O00000o$O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.calibrate.multi.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.calibrate.c.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.calibrate.c.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.b.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.e.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.e.O00000oO {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.e.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.e.O0000OOo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.e.O0000Oo0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.a.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.a.d.O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.i.O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.i.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.i.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.i.O000000o$4 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.i.O0000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.i.O0000Oo0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.i.O0000OOo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.h.c.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.h.c.O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.f.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.f.O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.f.O00000Oo$O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.f.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.f.O000000o$O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.f.O0000OOo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.f.O0000OOo$O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.business.j.O00000oO {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.key.cache.O00000o
+
+-keep class com.ingeek.key.cache.O00000o0 {
+    com.ingeek.key.cache.O00000o0 O00000Oo();
+    android.content.Context O00000o0();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.key.compat.stone.O00000o0
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.compat.stone.business.a.e.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.compat.stone.business.a.a.O00000oO {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.compat.stone.business.a.b.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.compat.stone.business.a.b.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.compat.stone.business.a.d.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.compat.stone.business.b.O00000oO {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.key.compat.stone.business.e.O00000Oo
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.compat.stone.business.d.O00000o$O00000oO {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.key.compat.stone.business.c.O00000oO
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.compat.stone.b.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.b.b.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.b.b.O00000o0$4 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.b.b.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.b.d.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.a.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.a.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.a.d.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.a.e.O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.a.e.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.a.a.O00000Oo {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.key.components.dependence.e.d.O00000Oo
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.e.d.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.e.c.O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.e.c.c.O00000oO {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.e.c.b.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.e.c.b.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.e.c.b.O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.e.c.b.O0000Oo0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.e.c.b.O0000O0o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.e.c.b.O0000Oo {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.key.components.dependence.e.c.b.O0000OOo
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.key.components.dependence.e.c.d.O000000o
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.e.c.d.O000000o$2 {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.key.components.dependence.e.c.a.O00000oO
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.e.c.a.O0000O0o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.e.c.e.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.dependence.e.c.f.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.components.implementation.c.O000000o {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.key.components.implementation.c.O00000Oo
+
+-keep class com.ingeek.key.components.implementation.log.LogUtils {
+    void d(java.lang.Object, java.lang.String);
+    void i(java.lang.Object, java.lang.String);
+}
+
+-keep class com.ingeek.key.config.SDKConfigManager {
+    boolean isDebuggingCheck();
+    boolean isRuntimeCheck();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.d.O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.d.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.d.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.nfc.d.O00000oO {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.nfc.interanl.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.nfc.interanl.config.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.nfc.interanl.c.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.nfc.interanl.dk.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.nfc.interanl.e.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.nfc.interanl.wallet.d.c.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.nfc.interanl.wallet.icce.huawei.business.repository.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.nfc.interanl.wallet.ingeek.oppo.business.bean.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.nfc.interanl.wallet.ingeek.oppo.business.walletapi.O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.nfc.interanl.wallet.ingeek.oppo.business.walletapi.O000000o {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.key.nfc.interanl.wallet.ingeek.vivo.business.bean.IssueCardBean$O00000o0
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.nfc.interanl.wallet.ingeek.vivo.business.d.O0000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowshrinking,allowobfuscation class com.ingeek.key.nfc.interanl.wallet.ingeek.vivo.business.walletapi.O00000o0 {
+    void O00000o0();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.nfc.interanl.wallet.ingeek.xiaomi.business.walletapi.O00000oO {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.nfc.interanl.wallet.ingeek.xiaomi.business.walletapi.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.nfc.interanl.wallet.e.O00000o {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.key.nfc.utils.NfcErrorCode$O00000oO
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.b.b.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.b.a.O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.b.a.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.b.a.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.b.a.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.sdk.O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowshrinking,allowobfuscation class com.ingeek.key.sdk.SDKInfo {
+    void O00000o();
+}
+
+-keepclassmembers,allowshrinking,allowobfuscation class com.ingeek.key.i.O00000Oo {
+    void O000000o();
+    void O00000o0();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.i.b.O000000o {
+    <init>();
+}
+
+-keep class com.ingeek.key.i.c.O000000o$3 {
+    <init>(java.lang.Object, android.content.Context);
+}
+
+-keep class com.ingeek.key.i.c.O000000o$O00000Oo {
+    void O00000o0();
+    void O00000Oo(int);
+}
+
+-keep class com.ingeek.key.i.c.O00000o0 {
+    java.lang.String O000000o(int);
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.i.c.O00000o0 {
+    <init>();
+}
+
+-keep class com.ingeek.key.i.c.e.O00000o {
+    <init>(android.content.Context, com.ingeek.key.i.c.O000000o$O00000Oo);
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.g.b.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.g.b.d.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.g.b.c.O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.g.b.c.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.g.b.c.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.g.c.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.g.c.O00000oO {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.g.c.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.g.c.O0000OOo {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.key.g.c.c.O000000o
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.g.c.c.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.g.c.c.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.g.c.c.O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.g.c.a.O00000oO {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.g.c.e.O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.g.c.e.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.g.c.e.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowshrinking,allowobfuscation class com.ingeek.key.tools.SecretKeyHelper {
+    void O00000o0();
+    void O00000Oo();
+}
+
+-keepclassmembers,allowshrinking,allowobfuscation class com.ingeek.key.util.IngeekCrashHandler {
+    void O00000o0();
+    void O00000o();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.key.f.O000000o {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.security.O00000o
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.security.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.security.O00000oO {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.security.O00000o0
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.security.O00000o0 {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.security.O000000o
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.security.O000000o {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.security.O0000OOo
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.security.O0000OOo {
+    <init>();
+}
+
+-keepclassmembers,allowshrinking,allowobfuscation class com.ingeek.security.SecurityEngineImpl {
+    void O000000o();
+    void O00000o();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.security.O0000O0o
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.security.O0000O0o {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.security.O0000Oo
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.security.O0000Oo {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.security.O0000Oo0
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.security.O0000Oo0 {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.security.O0000o0
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.security.O0000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.security.O0000o00 {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.security.O0000o
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.security.O0000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.security.O00oOooo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.security.b.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.security.d.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.security.d.O00000oO {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.security.d.O00000oO$O00000oO {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.security.c.O00000oO
+
+-keep,allowshrinking,allowobfuscation class com.ingeek.security.c.a.O000000o
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.security.c.b.O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.security.c.b.O00000o {
+    <init>();
+}
+
+-keepclassmembers,allowshrinking,allowobfuscation class com.ingeek.security.c.e.O0000Oo {
+    void O00000oO(com.ingeek.security.c.a.O000000o);
+    boolean O00000o();
+    com.ingeek.security.O000000o O00000o0();
+    byte[] O00000Oo(java.lang.String,byte[],byte[]);
+    byte[] O00000o(java.lang.String,byte[],byte[]);
+    byte[] O00000o0(java.lang.String,byte[],byte[],int);
+    boolean O00000Oo(java.lang.String,byte[]);
+    void O000000o();
+    void O00000Oo(android.content.Context);
+    java.lang.ref.WeakReference O00000o(com.ingeek.security.c.e.O0000Oo);
+    void O00000o0(com.ingeek.security.c.e.O0000Oo,android.content.Context);
+    android.os.Handler O00000oO(com.ingeek.security.c.e.O0000Oo);
+    com.ingeek.security.c.a.O000000o O00000Oo(com.ingeek.security.c.e.O0000Oo);
+    void O00000oO();
+    void O00000Oo();
+}
+
+-keep class com.ingeek.security.c.e.O0000Oo0 {
+    com.ingeek.security.c.e.O0000Oo0 O00000oO();
+    java.security.KeyStore O000000o();
+    boolean O00000o0(java.lang.String);
+    void O00000oO(java.lang.String);
+    java.security.KeyPair O00000Oo(java.lang.String);
+    void O00000Oo(android.content.Context, byte[], java.lang.String, java.lang.String);
+}
+
+-keepclassmembers,allowshrinking,allowobfuscation class com.ingeek.security.c.e.O0000Oo0 {
+    void O00000o();
+    void O00000Oo();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.security.a.O00000Oo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.ingeek.security.a.O000000o {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.c.e.c.O000000o$O00000o0 {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.a.b.O00000oO$O00000o0 {
+    <init>();
+}
+
+-keep class android.Manifest
+
+-keep class android.Manifest$permission
+
+-keep,allowshrinking,allowobfuscation class android.animation.LayoutTransition
+
+-keep,allowshrinking,allowobfuscation class android.animation.StateListAnimator
+
+-keep class android.annotation.TargetApi
+
+-keep,allowshrinking,allowobfuscation class android.app.Activity
+
+-keep class android.app.Service
+
+-keep,allowshrinking,allowobfuscation class android.bluetooth.BluetoothAdapter
+
+-keep,allowshrinking,allowobfuscation class android.bluetooth.BluetoothDevice
+
+-keep,allowshrinking,allowobfuscation class android.bluetooth.BluetoothGatt
+
+-keep,allowshrinking,allowobfuscation class android.bluetooth.BluetoothGattCallback
+
+-keep,allowshrinking,allowobfuscation class android.bluetooth.BluetoothGattCharacteristic
+
+-keep,allowshrinking,allowobfuscation class android.bluetooth.BluetoothGattDescriptor
+
+-keep,allowshrinking,allowobfuscation class android.bluetooth.le.BluetoothLeScanner
+
+-keep,allowshrinking,allowobfuscation class android.bluetooth.le.ScanResult
+
+-keep,allowshrinking,allowobfuscation class android.content.BroadcastReceiver
+
+-keep,allowshrinking,allowobfuscation class android.content.ComponentCallbacks
+
+-keep,allowshrinking,allowobfuscation class android.content.ComponentName
+
+-keep,allowshrinking,allowobfuscation class android.content.ContentResolver
+
+-keep class android.content.Context
+
+-keep class android.content.Intent
+
+-keep,allowshrinking,allowobfuscation class android.content.IntentFilter
+
+-keep,allowshrinking,allowobfuscation class android.content.IntentSender
+
+-keep,allowshrinking,allowobfuscation class android.content.ServiceConnection
+
+-keep,allowshrinking,allowobfuscation class android.content.SharedPreferences
+
+-keep class android.content.pm.ApplicationInfo
+
+-keep class android.content.pm.ComponentInfo
+
+-keep,allowshrinking,allowobfuscation class android.content.pm.PackageInfo
+
+-keep class android.content.pm.PackageItemInfo
+
+-keep class android.content.pm.PackageManager
+
+-keep class android.content.pm.ResolveInfo
+
+-keep,allowshrinking,allowobfuscation class android.content.res.AssetManager
+
+-keep,allowshrinking,allowobfuscation class android.content.res.ColorStateList
+
+-keep,allowshrinking,allowobfuscation class android.content.res.Configuration
+
+-keep,allowshrinking,allowobfuscation class android.content.res.Resources
+
+-keep,allowshrinking,allowobfuscation class android.content.res.Resources$Theme
+
+-keep,allowshrinking,allowobfuscation class android.content.res.TypedArray
+
+-keep,allowshrinking,allowobfuscation class android.database.Cursor
+
+-keep,allowshrinking,allowobfuscation class android.database.DatabaseErrorHandler
+
+-keep,allowshrinking,allowobfuscation class android.database.sqlite.SQLiteDatabase
+
+-keep,allowshrinking,allowobfuscation class android.database.sqlite.SQLiteDatabase$CursorFactory
+
+-keep,allowshrinking,allowobfuscation class android.database.sqlite.SQLiteDatabase$OpenParams
+
+-keep,allowshrinking,allowobfuscation class android.database.sqlite.SQLiteStatement
+
+-keep,allowshrinking,allowobfuscation class android.graphics.Bitmap
+
+-keep class android.graphics.Color
+
+-keep class android.graphics.ImageFormat
+
+-keep,allowshrinking,allowobfuscation class android.graphics.Paint
+
+-keep class android.graphics.PointF
+
+-keep,allowshrinking,allowobfuscation class android.graphics.Rect
+
+-keep class android.graphics.drawable.Drawable
+
+-keep class android.media.AudioTrack
+
+-keep,allowshrinking,allowobfuscation class android.net.ConnectivityManager
+
+-keep,allowshrinking,allowobfuscation class android.net.NetworkCapabilities
+
+-keep,allowshrinking,allowobfuscation class android.net.NetworkInfo
+
+-keep,allowshrinking,allowobfuscation class android.net.Uri
+
+-keep,allowshrinking,allowobfuscation class android.net.http.SslCertificate
+
+-keep class android.os.AsyncTask
+
+-keep class android.os.Build
+
+-keep class android.os.Build$VERSION
+
+-keep class android.os.Build$VERSION_CODES
+
+-keep,allowshrinking,allowobfuscation class android.os.Bundle
+
+-keep class android.os.Handler
+
+-keep,allowshrinking,allowobfuscation class android.os.Handler$Callback
+
+-keep class android.os.IBinder
+
+-keep class android.os.Looper
+
+-keep class android.os.Message
+
+-keep class android.os.Messenger
+
+-keep,allowshrinking,allowobfuscation class android.os.Parcel
+
+-keep,allowshrinking,allowobfuscation class android.os.Parcelable$Creator
+
+-keep class android.os.Process
+
+-keep class android.os.RemoteException
+
+-keep class android.os.SystemClock
+
+-keep,allowshrinking,allowobfuscation class android.os.UserHandle
+
+-keep class android.security.keystore.KeyInfo
+
+-keep class android.text.AndroidCharacter
+
+-keep class android.text.TextUtils
+
+-keep,allowshrinking,allowobfuscation class android.util.AttributeSet
+
+-keep class android.util.Log
+
+-keep,allowshrinking,allowobfuscation class android.util.Printer
+
+-keep class android.util.TypedValue
+
+-keep,allowshrinking,allowobfuscation class android.view.Display
+
+-keep class android.view.Gravity
+
+-keep class android.view.KeyEvent
+
+-keep,allowshrinking,allowobfuscation class android.view.MenuItem
+
+-keep class android.view.MotionEvent
+
+-keep,allowshrinking,allowobfuscation class android.view.PointerIcon
+
+-keep,allowshrinking,allowobfuscation class android.view.TouchDelegate
+
+-keep class android.view.View
+
+-keep,allowshrinking,allowobfuscation class android.view.View$AccessibilityDelegate
+
+-keep class android.view.View$MeasureSpec
+
+-keep,allowshrinking,allowobfuscation class android.view.View$OnApplyWindowInsetsListener
+
+-keep,allowshrinking,allowobfuscation class android.view.View$OnCapturedPointerListener
+
+-keep,allowshrinking,allowobfuscation class android.view.View$OnClickListener
+
+-keep,allowshrinking,allowobfuscation class android.view.View$OnContextClickListener
+
+-keep,allowshrinking,allowobfuscation class android.view.View$OnCreateContextMenuListener
+
+-keep,allowshrinking,allowobfuscation class android.view.View$OnDragListener
+
+-keep,allowshrinking,allowobfuscation class android.view.View$OnFocusChangeListener
+
+-keep,allowshrinking,allowobfuscation class android.view.View$OnGenericMotionListener
+
+-keep,allowshrinking,allowobfuscation class android.view.View$OnHoverListener
+
+-keep,allowshrinking,allowobfuscation class android.view.View$OnKeyListener
+
+-keep,allowshrinking,allowobfuscation class android.view.View$OnLongClickListener
+
+-keep,allowshrinking,allowobfuscation class android.view.View$OnScrollChangeListener
+
+-keep,allowshrinking,allowobfuscation class android.view.View$OnSystemUiVisibilityChangeListener
+
+-keep,allowshrinking,allowobfuscation class android.view.View$OnTouchListener
+
+-keep class android.view.ViewConfiguration
+
+-keep,allowshrinking,allowobfuscation class android.view.ViewGroup$LayoutParams
+
+-keep,allowshrinking,allowobfuscation class android.view.ViewGroup$OnHierarchyChangeListener
+
+-keep,allowshrinking,allowobfuscation class android.view.ViewOutlineProvider
+
+-keep,allowshrinking,allowobfuscation class android.view.animation.Animation
+
+-keep,allowshrinking,allowobfuscation class android.view.animation.Animation$AnimationListener
+
+-keep,allowshrinking,allowobfuscation class android.view.animation.LayoutAnimationController
+
+-keep,allowshrinking,allowobfuscation class android.view.autofill.AutofillId
+
+-keep,allowshrinking,allowobfuscation class android.view.textclassifier.TextClassifier
+
+-keep,allowshrinking,allowobfuscation class android.webkit.DownloadListener
+
+-keep,allowshrinking,allowobfuscation class android.webkit.ValueCallback
+
+-keep,allowshrinking,allowobfuscation class android.webkit.WebChromeClient
+
+-keep,allowshrinking,allowobfuscation class android.webkit.WebView$FindListener
+
+-keep,allowshrinking,allowobfuscation class android.webkit.WebView$PictureListener
+
+-keep,allowshrinking,allowobfuscation class android.webkit.WebViewClient
+
+-keep,allowshrinking,allowobfuscation class android.widget.AbsListView$MultiChoiceModeListener
+
+-keep,allowshrinking,allowobfuscation class android.widget.AbsListView$OnScrollListener
+
+-keep,allowshrinking,allowobfuscation class android.widget.AbsListView$RecyclerListener
+
+-keep,allowshrinking,allowobfuscation class android.widget.Adapter
+
+-keep,allowshrinking,allowobfuscation class android.widget.AdapterView$OnItemClickListener
+
+-keep,allowshrinking,allowobfuscation class android.widget.AdapterView$OnItemLongClickListener
+
+-keep,allowshrinking,allowobfuscation class android.widget.AdapterView$OnItemSelectedListener
+
+-keep,allowshrinking,allowobfuscation class android.widget.ExpandableListAdapter
+
+-keep class android.widget.ExpandableListView
+
+-keep,allowshrinking,allowobfuscation class android.widget.ExpandableListView$OnChildClickListener
+
+-keep,allowshrinking,allowobfuscation class android.widget.ExpandableListView$OnGroupClickListener
+
+-keep,allowshrinking,allowobfuscation class android.widget.ExpandableListView$OnGroupCollapseListener
+
+-keep,allowshrinking,allowobfuscation class android.widget.ExpandableListView$OnGroupExpandListener
+
+-keep,allowshrinking,allowobfuscation class android.widget.ListAdapter
+
+-keep,allowshrinking,allowobfuscation class androidx.annotation.RequiresApi {
+    int value();
+    int api();
+}
+
+-keep,allowshrinking,allowobfuscation class androidx.core.app.ActivityCompat {
+    void setPermissionCompatDelegate(androidx.core.app.ActivityCompat$PermissionCompatDelegate);
+    androidx.core.app.ActivityCompat$PermissionCompatDelegate getPermissionCompatDelegate();
+    boolean invalidateOptionsMenu(android.app.Activity);
+    void startActivityForResult(android.app.Activity,android.content.Intent,int,android.os.Bundle);
+    void startIntentSenderForResult(android.app.Activity,android.content.IntentSender,int,android.content.Intent,int,int,int,android.os.Bundle);
+    void finishAffinity(android.app.Activity);
+    void finishAfterTransition(android.app.Activity);
+    android.net.Uri getReferrer(android.app.Activity);
+    android.view.View requireViewById(android.app.Activity,int);
+    void setEnterSharedElementCallback(android.app.Activity,androidx.core.app.SharedElementCallback);
+    void setExitSharedElementCallback(android.app.Activity,androidx.core.app.SharedElementCallback);
+    void postponeEnterTransition(android.app.Activity);
+    void startPostponedEnterTransition(android.app.Activity);
+    void requestPermissions(android.app.Activity,java.lang.String[],int);
+    boolean shouldShowRequestPermissionRationale(android.app.Activity,java.lang.String);
+    androidx.core.view.DragAndDropPermissionsCompat requestDragAndDropPermissions(android.app.Activity,android.view.DragEvent);
+}
+
+-keepclassmembers,allowobfuscation class androidx.core.app.ActivityCompat {
+    <init>();
+}
+
+-keep class androidx.core.app.ActivityCompat$PermissionCompatDelegate
+
+-keep class androidx.core.app.ActivityCompat$PermissionCompatDelegate
+
+-keepclassmembers,allowshrinking,allowobfuscation class androidx.core.app.ActivityCompat$PermissionCompatDelegate {
+    boolean requestPermissions(android.app.Activity,java.lang.String[],int);
+    boolean onActivityResult(android.app.Activity,int,int,android.content.Intent);
+}
+
+-keep class androidx.core.app.SharedElementCallback
+
+-keepclassmembers,allowoptimization,allowobfuscation class androidx.core.app.SharedElementCallback {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class androidx.core.content.ContextCompat {
+    boolean startActivities(android.content.Context,android.content.Intent[]);
+    boolean startActivities(android.content.Context,android.content.Intent[],android.os.Bundle);
+    void startActivity(android.content.Context,android.content.Intent,android.os.Bundle);
+    java.io.File getDataDir(android.content.Context);
+    java.io.File[] getObbDirs(android.content.Context);
+    java.io.File[] getExternalFilesDirs(android.content.Context,java.lang.String);
+    java.io.File[] getExternalCacheDirs(android.content.Context);
+    android.graphics.drawable.Drawable getDrawable(android.content.Context,int);
+    android.content.res.ColorStateList getColorStateList(android.content.Context,int);
+    int getColor(android.content.Context,int);
+    int checkSelfPermission(android.content.Context,java.lang.String);
+    java.io.File getNoBackupFilesDir(android.content.Context);
+    java.io.File getCodeCacheDir(android.content.Context);
+    android.content.Context createDeviceProtectedStorageContext(android.content.Context);
+    boolean isDeviceProtectedStorage(android.content.Context);
+    void startForegroundService(android.content.Context,android.content.Intent);
+    java.lang.Object getSystemService(android.content.Context,java.lang.Class);
+    java.lang.String getSystemServiceName(android.content.Context,java.lang.Class);
+}
+
+-keepclassmembers,allowobfuscation class androidx.core.content.ContextCompat {
+    <init>();
+}
+
+-keep class androidx.core.view.DragAndDropPermissionsCompat
+
+-keepclassmembers,allowshrinking,allowobfuscation class androidx.core.view.DragAndDropPermissionsCompat {
+    androidx.core.view.DragAndDropPermissionsCompat request(android.app.Activity,android.view.DragEvent);
+    void release();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.finshell.wallet.key.OneParamCallBack {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.finshell.wallet.key.d {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.finshell.wallet.key.model.BeginTransactionRsp {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.finshell.wallet.key.model.Command {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.finshell.wallet.key.model.CommandInfo {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.finshell.wallet.key.model.ExecuteConstant {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.finshell.wallet.key.model.KeyAidlConstant {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.finshell.wallet.key.model.QueryConstant {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.finshell.wallet.key.model.QuerySeidModel {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.finshell.wallet.key.model.QuerySupportNfc {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.google.gson.Gson
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.google.gson.Gson {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.google.gson.GsonBuilder {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.google.gson.JsonArray {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class com.google.gson.JsonElement
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.google.gson.JsonElement {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.google.gson.JsonNull {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.google.gson.JsonObject {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.google.gson.JsonParser {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.google.gson.TypeAdapter {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.google.gson.internal.Excluder {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.google.gson.reflect.TypeToken {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class com.huawei.wallet.hmspass.service.WalletPassApiResponse {
+    <init>();
+}
+
+-keep class java.io.BufferedInputStream
+
+-keep class java.io.BufferedReader
+
+-keep class java.io.ByteArrayInputStream
+
+-keep class java.io.DataOutputStream
+
+-keep class java.io.File
+
+-keep class java.io.FileFilter
+
+-keep class java.io.FileInputStream
+
+-keep,allowshrinking,allowobfuscation class java.io.FileOutputStream
+
+-keep class java.io.FileReader
+
+-keep class java.io.IOException
+
+-keep class java.io.InputStream
+
+-keep class java.io.InputStreamReader
+
+-keep class java.io.OutputStream
+
+-keep,allowshrinking,allowobfuscation class java.io.PrintStream
+
+-keep,allowshrinking,allowobfuscation class java.io.PrintWriter
+
+-keep class java.io.Reader
+
+-keep class java.io.UnsupportedEncodingException
+
+-keep class java.lang.Boolean
+
+-keep class java.lang.Byte
+
+-keep,allowshrinking,allowobfuscation class java.lang.CharSequence
+
+-keep class java.lang.Class
+
+-keep class java.lang.ClassLoader
+
+-keep class java.lang.ClassNotFoundException
+
+-keep class java.lang.Deprecated
+
+-keep class java.lang.Enum
+
+-keep class java.lang.Exception
+
+-keep class java.lang.IllegalAccessException
+
+-keep class java.lang.IllegalArgumentException
+
+-keep class java.lang.IllegalThreadStateException
+
+-keep class java.lang.InstantiationException
+
+-keep class java.lang.Integer
+
+-keep class java.lang.InterruptedException
+
+-keep class java.lang.Long
+
+-keep class java.lang.Math
+
+-keep class java.lang.NoSuchFieldError
+
+-keep class java.lang.NoSuchMethodException
+
+-keep class java.lang.NullPointerException
+
+-keep class java.lang.Number
+
+-keep class java.lang.NumberFormatException
+
+-keep class java.lang.Object
+
+-keep class java.lang.Process
+
+-keep,allowshrinking,allowobfuscation class java.lang.Runnable
+
+-keep class java.lang.Runtime
+
+-keep class java.lang.RuntimeException
+
+-keep class java.lang.SecurityException
+
+-keep class java.lang.StackTraceElement
+
+-keep class java.lang.String
+
+-keep class java.lang.StringBuilder
+
+-keep class java.lang.System
+
+-keep class java.lang.Thread
+
+-keep,allowshrinking,allowobfuscation class java.lang.Thread$UncaughtExceptionHandler
+
+-keep,allowshrinking,allowobfuscation class java.lang.ThreadGroup
+
+-keep class java.lang.Throwable
+
+-keep class java.lang.UnsatisfiedLinkError
+
+-keep class java.lang.Void
+
+-keep class java.lang.ref.Reference
+
+-keep class java.lang.ref.WeakReference
+
+-keep class java.lang.reflect.AccessibleObject
+
+-keep class java.lang.reflect.Array
+
+-keep class java.lang.reflect.Constructor
+
+-keep class java.lang.reflect.Field
+
+-keep class java.lang.reflect.InvocationTargetException
+
+-keep class java.lang.reflect.Member
+
+-keep class java.lang.reflect.Method
+
+-keep,allowshrinking,allowobfuscation class java.lang.reflect.Type
+
+-keep class java.math.BigInteger
+
+-keep class java.nio.ByteBuffer
+
+-keep class java.nio.CharBuffer
+
+-keep class java.nio.charset.CharacterCodingException
+
+-keep class java.nio.charset.Charset
+
+-keep class java.nio.charset.CharsetDecoder
+
+-keep class java.security.Key
+
+-keep class java.security.KeyPair
+
+-keep class java.security.KeyStore
+
+-keep class java.security.MessageDigest
+
+-keep class java.security.NoSuchAlgorithmException
+
+-keep class java.security.PrivateKey
+
+-keep class java.security.Provider
+
+-keep class java.security.PublicKey
+
+-keep class java.security.SecureRandom
+
+-keep,allowshrinking,allowobfuscation class java.security.cert.X509Certificate
+
+-keep class java.security.spec.AlgorithmParameterSpec
+
+-keep,allowshrinking,allowobfuscation class java.text.SimpleDateFormat
+
+-keep class java.util.AbstractCollection
+
+-keep class java.util.AbstractMap
+
+-keep class java.util.ArrayList
+
+-keep class java.util.Arrays
+
+-keep,allowshrinking,allowobfuscation class java.util.Calendar
+
+-keep,allowshrinking,allowobfuscation class java.util.Collection
+
+-keep,allowshrinking,allowobfuscation class java.util.Comparator
+
+-keep,allowshrinking,allowobfuscation class java.util.Date
+
+-keep class java.util.EnumSet
+
+-keep class java.util.HashMap
+
+-keep class java.util.HashSet
+
+-keep class java.util.Iterator
+
+-keep,allowshrinking,allowobfuscation class java.util.LinkedHashMap
+
+-keep class java.util.List
+
+-keep,allowshrinking,allowobfuscation class java.util.ListIterator
+
+-keep class java.util.Map
+
+-keep,allowshrinking,allowobfuscation class java.util.Observable
+
+-keep,allowshrinking,allowobfuscation class java.util.Observer
+
+-keep,allowshrinking,allowobfuscation class java.util.Queue
+
+-keep class java.util.Random
+
+-keep class java.util.Scanner
+
+-keep class java.util.Set
+
+-keep,allowshrinking,allowobfuscation class java.util.Spliterator
+
+-keep,allowshrinking,allowobfuscation class java.util.Timer
+
+-keep,allowshrinking,allowobfuscation class java.util.concurrent.ConcurrentHashMap
+
+-keep,allowshrinking,allowobfuscation class java.util.concurrent.CopyOnWriteArrayList
+
+-keep,allowshrinking,allowobfuscation class java.util.concurrent.Executor
+
+-keep class java.util.concurrent.TimeUnit
+
+-keep,allowshrinking,allowobfuscation class java.util.concurrent.atomic.AtomicInteger
+
+-keep,allowshrinking,allowobfuscation class java.util.function.BiConsumer
+
+-keep,allowshrinking,allowobfuscation class java.util.function.BiFunction
+
+-keep,allowshrinking,allowobfuscation class java.util.function.Consumer
+
+-keep,allowshrinking,allowobfuscation class java.util.function.Function
+
+-keep,allowshrinking,allowobfuscation class java.util.function.Predicate
+
+-keep,allowshrinking,allowobfuscation class java.util.function.UnaryOperator
+
+-keep class javax.crypto.SecretKey
+
+-keep class javax.crypto.spec.GCMParameterSpec
+
+-keep class javax.crypto.spec.SecretKeySpec
+
+-keep,allowshrinking,allowobfuscation class javax.net.ssl.KeyManager
+
+-keep,allowshrinking,allowobfuscation class javax.net.ssl.SSLSocketFactory
+
+-keep,allowshrinking,allowobfuscation class javax.net.ssl.TrustManager
+
+-keep,allowshrinking,allowobfuscation class javax.net.ssl.X509TrustManager
+
+-keep,allowshrinking,allowobfuscation class okhttp3.Call
+
+-keep,allowshrinking,allowobfuscation class okhttp3.Callback
+
+-keepclassmembers,allowoptimization,allowobfuscation class okhttp3.ConnectionPool {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class okhttp3.Dispatcher {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class okhttp3.EventListener {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class okhttp3.FormBody$Builder {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class okhttp3.OkHttpClient
+
+-keepclassmembers,allowoptimization,allowobfuscation class okhttp3.OkHttpClient {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class okhttp3.OkHttpClient$Builder {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class okhttp3.Request
+
+-keep,allowshrinking,allowobfuscation class okhttp3.Request$Builder
+
+-keepclassmembers,allowoptimization,allowobfuscation class okhttp3.Request$Builder {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class okhttp3.RequestBody {
+    <init>();
+}
+
+-keep,allowshrinking,allowobfuscation class okhttp3.Response
+
+-keepclassmembers,allowoptimization,allowobfuscation class okhttp3.Response$Builder {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class okhttp3.ResponseBody {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class okhttp3.WebSocketListener {
+    <init>();
+}
+
+-keep class org.bouncycastle.asn1.ASN1EncodableVector {
+    <init>();
+    void add(org.bouncycastle.asn1.ASN1Encodable);
+}
+
+-keep class org.bouncycastle.asn1.ASN1InputStream {
+    <init>(byte[]);
+    org.bouncycastle.asn1.ASN1Primitive readObject();
+}
+
+-keep class org.bouncycastle.asn1.ASN1Integer {
+    org.bouncycastle.asn1.ASN1Integer getInstance(java.lang.Object);
+    <init>(long);
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class org.bouncycastle.asn1.ASN1Null {
+    <init>();
+}
+
+-keep class org.bouncycastle.asn1.ASN1Object {
+    byte[] getEncoded();
+    byte[] getEncoded(java.lang.String);
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class org.bouncycastle.asn1.ASN1Object {
+    <init>();
+}
+
+-keep class org.bouncycastle.asn1.ASN1OctetString {
+    org.bouncycastle.asn1.ASN1OctetString getInstance(java.lang.Object);
+    byte[] getOctets();
+}
+
+-keep class org.bouncycastle.asn1.ASN1Primitive
+
+-keep class org.bouncycastle.asn1.ASN1Sequence {
+    org.bouncycastle.asn1.ASN1Sequence getInstance(java.lang.Object);
+    org.bouncycastle.asn1.ASN1Encodable getObjectAt(int);
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class org.bouncycastle.asn1.ASN1Sequence {
+    <init>();
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class org.bouncycastle.asn1.ASN1Set {
+    <init>();
+}
+
+-keep class org.bouncycastle.asn1.DERNull {
+    org.bouncycastle.asn1.DERNull INSTANCE;}
+
+-keepclassmembers,allowoptimization,allowobfuscation class org.bouncycastle.asn1.DERNull {
+    <init>();
+}
+
+-keep class org.bouncycastle.asn1.DEROctetString {
+    <init>(byte[]);
+}
+
+-keep class org.bouncycastle.asn1.DERSequence {
+    <init>(org.bouncycastle.asn1.ASN1EncodableVector);
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class org.bouncycastle.asn1.DERSequence {
+    <init>();
+}
+
+-keep class org.bouncycastle.asn1.DERSet {
+    <init>(org.bouncycastle.asn1.ASN1EncodableVector);
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class org.bouncycastle.asn1.DERSet {
+    <init>();
+}
+
+-keep class org.bouncycastle.asn1.DERTaggedObject {
+    <init>(boolean, int, org.bouncycastle.asn1.ASN1Encodable);
+}
+
+-keepclassmembers,allowoptimization,allowobfuscation class org.bouncycastle.util.encoders.Base64 {
+    <init>();
+}
+
+-keepclassmembers class * extends android.os.Parcelable {
+    static ** CREATOR;}
+
+# Enumerations.
+-keepclassmembers enum  * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep @androidx.annotation.Keep class *
+
+-keepclassmembers class * {
+    @androidx.annotation.Keep
+    <fields>;    @androidx.annotation.Keep
+    <methods>;
+}
+
+# Keep reflection
+# Class.forName(...)
+-keep class com.ingeek.key.alive.AliveToConnectHelper {
+    <fields>;    <methods>;
+}
+
+# Class.forName(...)
+-keep class com.ingeek.key.components.implementation.log.LogUtils {
+    <fields>;    <methods>;
+}
+
+# Gson SerializedClass
+-keep class com.ingeek.key.components.implementation.http.** {
+    <fields>;    <methods>;
+}
+
+-keep class com.ingeek.key.components.dependence.okhttp.** {
+    <fields>;    <methods>;
+}
+
+# DB Bean
+-keep class com.ingeek.key.components.dependence.database.** {
+    <fields>;    <methods>;
+}
+
+-keep class com.ingeek.key.components.implementation.db.bean.** {
+    <fields>;    <methods>;
+}
+
+# other Bean
+-keep class com.ingeek.key.ble.bean.** {
+    <fields>;    <methods>;
+}
+
+-keep class com.ingeek.key.compat.stone.business.bean.** {
+    <fields>;    <methods>;
+}
+
+-keep class com.ingeek.key.config.constants.** {
+    <fields>;    <methods>;
+}
+
+-keep class com.ingeek.key.business.bean.** {
+    <fields>;    <methods>;
+}
+
+-keep class com.ingeek.key.business.init.** {
+    <fields>;    <methods>;
+}
+
+-keep class com.ingeek.key.callback.** {
+    <fields>;    <methods>;
+}
+
+-keep class com.ingeek.key.constants.** {
+    <fields>;    <methods>;
+}
+
+-keep class com.ingeek.key.exception.** {
+    <fields>;    <methods>;
+}
+
+-keep class com.ingeek.key.listener.** {
+    <fields>;    <methods>;
+}
+
+-keep class com.ingeek.key.config.** {
+    <fields>;    <methods>;
+}
+
+-keep class com.ingeek.key.util.** {
+    <fields>;    <methods>;
+}
+
+-keep class com.ingeek.key.tools.** {
+    <fields>;    <methods>;
+}
+
+-keep class com.ingeek.key.sdk.IngeekSDKVersion {
+    <fields>;    <methods>;
+}
+
+-keep class com.ingeek.key.sdk.SDKInfo {
+    <fields>;    <methods>;
+}
+
+-keep class com.ingeek.key.proxy.** {
+    <fields>;    <methods>;
+}
+
+-keep class com.ingeek.key.alive.third.** {
+    <fields>;    <methods>;
+}
+
+# -keep class com.ingeek.key.config.ble.** { *; }
+# -keep class com.ingeek.key.config.constants.** { *; }
+# -keep class com.ingeek.key.config.log.** { *; }
+# -keep class com.ingeek.key.config.secure.** { *; }
+# -keep class com.ingeek.key.config.vehicle.** { *; }
+# -keep class com.ingeek.key.config.vehiclecommand.** { *; }
+# Jni reflection
+-keep class com.ingeek.security.SubjectItem {
+    <fields>;    <methods>;
+}
+
+# auto parking business
+-keep class com.ingeek.key.park.** {
+    <fields>;    <methods>;
+}
+
+# multi connect business
+-keep class com.ingeek.key.multi.** {
+    <fields>;    <methods>;
+}
+
+# calibrate business
+-keep class com.ingeek.key.cache.BleCalibrateCache {
+    <fields>;    <methods>;
+}
+
+-keep class com.ingeek.key.business.calibrate.multi.MultiCalibrateHelper {
+    <fields>;    <methods>;
+}
+
+# thrid library
+-keep class com.ingeek.ares.** {
+    <fields>;    <methods>;
+}
+
+-keep @androidx.annotation.Keep class * {
+    <fields>;    <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep
+    <methods>;
+}

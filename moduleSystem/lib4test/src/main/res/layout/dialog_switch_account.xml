@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/dimen_300"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_btn_blue_radius_16"
+        android:padding="@dimen/dimen_20">
+
+        <EditText
+            android:id="@+id/et_add_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:hint="账号(输入已有账号则会删除)"
+            android:textColor="@color/white"
+            android:inputType="phone"
+            android:textSize="@dimen/dimen_12"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <EditText
+            android:id="@+id/et_add_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入账号用于功能"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_12"
+            app:layout_constraintTop_toBottomOf="@+id/et_add_account" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="@dimen/dimen_300"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="@dimen/dimen_300"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_20"
+            android:gravity="center"
+            android:text="切换账号"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_20"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="135dp"
+            android:layout_height="@dimen/dimen_40"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_20"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cancel" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="135dp"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_add_content" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="QRCodeView">
+        <!-- 扫描框距离toolbar底部的距离，默认值为90dp -->
+        <attr name="qrcv_topOffset" format="dimension|reference" />
+        <!-- 扫描框边角线的宽度，默认值为3dp -->
+        <attr name="qrcv_cornerSize" format="dimension|reference" />
+        <!-- 扫描框边角线的长度，默认值为20dp -->
+        <attr name="qrcv_cornerLength" format="dimension|reference" />
+        <!-- 扫描框边角线的颜色，默认值为@android:color/white -->
+        <attr name="qrcv_cornerColor" format="color|reference" />
+        <!-- 扫描框边角线显示位置(相对于边框)，默认值为中间 -->
+        <attr name="qrcv_cornerDisplayType">
+            <enum name="center" value="1" />
+            <enum name="inside" value="2" />
+        </attr>
+        <!-- 扫描框的宽度，默认值为200dp -->
+        <attr name="qrcv_rectWidth" format="dimension|reference" />
+        <!-- 条码扫样式描框的高度，默认值为140dp -->
+        <attr name="qrcv_barcodeRectHeight" format="dimension|reference" />
+        <!-- 除去扫描框，其余部分阴影颜色，默认值为#33FFFFFF -->
+        <attr name="qrcv_maskColor" format="color|reference" />
+        <!-- 扫描线的宽度，默认值为1dp -->
+        <attr name="qrcv_scanLineSize" format="dimension|reference" />
+        <!-- 扫描线的颜色，默认值为@android:color/white -->
+        <attr name="qrcv_scanLineColor" format="color|reference" />
+        <!-- 扫描线距离上下或者左右边框的间距，默认值为0dp -->
+        <attr name="qrcv_scanLineMargin" format="dimension|reference" />
+        <!-- 是否显示默认的图片扫描线，默认值为false -->
+        <attr name="qrcv_isShowDefaultScanLineDrawable" format="boolean" />
+        <!-- 扫描线的图片资源，默认值为null -->
+        <attr name="qrcv_customScanLineDrawable" format="reference" />
+        <!-- 扫描边框的宽度，默认值为1dp -->
+        <attr name="qrcv_borderSize" format="dimension|reference" />
+        <!-- 扫描边框的颜色，默认值为@android:color/white -->
+        <attr name="qrcv_borderColor" format="color|reference" />
+        <!-- 扫描线从顶部移动到底部的动画时间，默认值为1000 -->
+        <attr name="qrcv_animTime" format="integer" />
+        <!-- 扫描框中心点在屏幕垂直方向的比例，当设置此值时，会忽略 qrcv_topOffset -->
+        <attr name="qrcv_verticalBias" format="float" />
+        <!-- Toolbar的高度，当有设置qrcv_isCenterVertical属性时，通过该属性来修正有Toolbar时导致扫描框垂直居中的偏差，默认值为0dp -->
+        <attr name="qrcv_toolbarHeight" format="dimension|reference" />
+        <!-- 扫描框的样式是否为扫条形码样式，默认值为false -->
+        <attr name="qrcv_isBarcode" format="boolean" />
+        <!-- 扫描二维码时的提示文案，默认值为null -->
+        <attr name="qrcv_qrCodeTipText" format="string|reference" />
+        <!-- 扫描条码时的提示文案，默认值为null -->
+        <attr name="qrcv_barCodeTipText" format="string|reference" />
+        <!-- 提示文案字体大小，默认值为14sp -->
+        <attr name="qrcv_tipTextSize" format="dimension|reference" />
+        <!-- 提示文案颜色，默认值为@android:color/white -->
+        <attr name="qrcv_tipTextColor" format="color|reference" />
+        <!-- 提示文案是否在扫描框的底部，默认值为false -->
+        <attr name="qrcv_isTipTextBelowRect" format="boolean" />
+        <!-- 提示文案与扫描框之间的间距，默认值为20dp -->
+        <attr name="qrcv_tipTextMargin" format="dimension|reference" />
+        <!-- 是否把提示文案作为单行显示，默认值为false -->
+        <attr name="qrcv_isShowTipTextAsSingleLine" format="boolean" />
+        <!-- 是否显示提示文案的背景，默认值为false -->
+        <attr name="qrcv_isShowTipBackground" format="boolean" />
+        <!-- 提示文案的背景色，默认值为#22000000 -->
+        <attr name="qrcv_tipBackgroundColor" format="color|reference" />
+        <!-- 扫描线是否来回移动，默认值为true -->
+        <attr name="qrcv_isScanLineReverse" format="boolean" />
+        <!-- 是否显示默认的网格图片扫描线，默认值为false -->
+        <attr name="qrcv_isShowDefaultGridScanLineDrawable" format="boolean" />
+        <!-- 扫描线的网格图片资源，默认值为null -->
+        <attr name="qrcv_customGridScanLineDrawable" format="reference" />
+        <!-- 是否只识别扫描框中的码，默认值为false -->
+        <attr name="qrcv_isOnlyDecodeScanBoxArea" format="boolean" />
+        <!-- 是否显示定位点，默认值为false -->
+        <attr name="qrcv_isShowLocationPoint" format="boolean" />
+        <!-- 码太小时是否自动缩放，默认值为false -->
+        <attr name="qrcv_isAutoZoom" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MultipleStatusView">
+        <attr name="loadingView" format="reference" />
+        <attr name="errorView" format="reference" />
+        <attr name="emptyView" format="reference" />
+        <attr name="networkerrorView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="statusViewBackground" format="color" />
+    </declare-styleable>
+
+    <attr name="toolbar" format="reference"/>
+    <attr name="album.dropdown.title.color" format="reference|color"/>
+    <attr name="album.dropdown.count.color" format="reference|color"/>
+    <attr name="album.element.color" format="reference|color"/>
+    <attr name="album.thumbnail.placeholder" format="reference|color"/>
+    <attr name="album.emptyView" format="reference"/>
+    <attr name="album.emptyView.textColor" format="reference|color"/>
+    <attr name="listPopupWindowStyle" format="reference"/>
+    <attr name="page.bg" format="reference|color"/>
+    <attr name="bottomToolbar.bg" format="reference|color"/>
+    <attr name="bottomToolbar.preview.textColor" format="reference|color"/>
+    <attr name="bottomToolbar.apply.textColor" format="reference|color"/>
+    <attr name="preview.bottomToolbar.back.textColor" format="reference|color"/>
+    <attr name="preview.bottomToolbar.apply.textColor" format="reference|color"/>
+    <attr name="item.placeholder" format="reference|color"/>
+    <attr name="item.checkCircle.backgroundColor" format="reference|color"/>
+    <attr name="item.checkCircle.borderColor" format="reference|color"/>
+    <attr name="capture.textColor" format="reference|color"/>
+
+    <declare-styleable name="TopBarView">
+        <attr name="colorMode" format="dimension">
+            <enum name="Light" value="0" />
+            <enum name="Dark" value="1" />
+        </attr>
+        <attr name="titleText" format="string" />
+        <attr name="topbarBackground" format="color" />
+        <attr name="rightText" format="string" />
+        <attr name="leftText" format="string" />
+        <attr name="leftTextColor" format="color" />
+        <attr name="showBack" format="boolean" />
+        <attr name="leftIcon" format="reference" />
+        <attr name="rightIcon" format="reference" />
+        <attr name="rightSecondIcon" format="reference" />
+        <attr name="right_Background" format="reference" />
+        <attr name="TopBarViewShowDivider" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MediumBoldTextView">
+        <attr name="bold" format="boolean" />
+        <attr name="custom_typeface">
+            <enum name="normal" value="1" />
+            <enum name="Saira" value="2" />
+        </attr>
+
+    </declare-styleable>
+
+    <style name="HycanButton">
+        <item name="android:textSize">16dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!-- 主按钮 -->
+    <style name="HycanPButton" parent="HycanButton">
+        <item name="android:background">@drawable/bg_main_button_radius_25</item>
+        <item name="android:textColor">@color/button_text_color</item>
+    </style>
+
+    <style name="HycanPBottomButton" parent="HycanPButton">
+        <item name="android:layout_marginStart">@dimen/dimen_20</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_20</item>
+        <item name="android:layout_marginTop">@dimen/dimen_8</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_8</item>
+    </style>
+</resources>

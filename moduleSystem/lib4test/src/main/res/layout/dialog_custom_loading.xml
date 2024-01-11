@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loBackgound"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dailog_color_halfbg"
+    android:clickable="true"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/lLoadingBg"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:minWidth="100dp"
+        android:background="@drawable/bg_white_radius_10"
+        android:paddingTop="5dp"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loading_progress"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            app:lottie_fileName="motion_xialashuaxin.json"
+            app:lottie_loop="true" />
+
+
+        <TextView
+            android:id="@+id/tvLoadingMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/contentDescribe"
+            android:textSize="13dp"
+            tools:text="加载中" />
+
+    </LinearLayout>
+</LinearLayout>

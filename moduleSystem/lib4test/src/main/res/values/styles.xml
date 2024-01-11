@@ -1,0 +1,425 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppThemeCommon" parent="AppDayNightTheme">
+        <item name="android:textCursorDrawable">@drawable/search_cursor_drawable</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppThemeCommon">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <declare-styleable name="VerCodeEditText">
+        <attr name="figures" format="integer" />
+        <attr name="verCodeMargin" format="dimension" />
+        <attr name="bottomLineSelectedColor" format="reference" />
+        <attr name="bottomLineNormalColor" format="reference" />
+        <attr name="bottomLineHeight" format="dimension" />
+        <attr name="selectedBackgroundColor" format="reference" />
+        <attr name="cursorDuration" format="integer" />
+        <attr name="cursorWidth" format="dimension" />
+        <attr name="cursorColor" format="color|reference" />
+        <attr name="mTypeFace" format="string" />
+    </declare-styleable>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/primary</item>
+    </style>
+
+    <style name="MultipleStatusView" />
+
+    <style name="MultipleStatusView.StatusViewGray">
+        <item name="statusViewBackground">@color/backgroundPlaceholder</item>
+    </style>
+
+
+    <style name="MultipleStatusView.Content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textColor">#a9b7b7</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="Base.CardView" parent="android:Widget">
+        <item name="cardCornerRadius">@dimen/cardview_default_radius</item>
+        <item name="cardElevation">@dimen/cardview_default_elevation</item>
+        <item name="cardMaxElevation">@dimen/cardview_default_elevation</item>
+        <item name="cardUseCompatPadding">false</item>
+        <item name="cardPreventCornerOverlap">true</item>
+    </style>
+
+    <style name="CardView" parent="Base.CardView" />
+
+    <style name="CardView.Dark">
+        <item name="cardBackgroundColor">@color/cardview_dark_background</item>
+    </style>
+
+    <style name="CardView.Light">
+        <item name="cardBackgroundColor">@color/cardview_light_background</item>
+    </style>
+
+
+    <style name="STextAppearance"></style>
+
+    <style name="STextAppearance.Micro">
+        <item name="android:textSize">@dimen/s_text_size_micro</item>
+    </style>
+
+    <style name="STextAppearance.Small">
+        <item name="android:textSize">@dimen/s_text_size_small</item>
+    </style>
+
+    <style name="STextAppearance.Medium">
+        <item name="android:textSize">@dimen/s_text_size_medium</item>
+    </style>
+
+    <style name="STextAppearance.Large">
+        <item name="android:textSize">@dimen/s_text_size_large</item>
+    </style>
+    <!-- ———————————————————— 白色字体style ———————————————————— -->
+    <style name="STextAppearance.Micro.White1">
+        <item name="android:textColor">@color/s_text_color_white_1</item>
+    </style>
+
+    <style name="STextAppearance.Small.White1">
+        <item name="android:textColor">@color/s_text_color_white_1</item>
+    </style>
+
+    <style name="STextAppearance.Medium.White1">
+        <item name="android:textColor">@color/s_text_color_white_1</item>
+    </style>
+
+    <style name="STextAppearance.Large.White1">
+        <item name="android:textColor">@color/s_text_color_white_1</item>
+    </style>
+
+    <style name="STextAppearance.Small.Black3">
+        <item name="android:textColor">@color/s_text_color_black_3</item>
+    </style>
+
+    <style name="STextAppearance.Medium.Black3">
+        <item name="android:textColor">@color/s_text_color_black_3</item>
+    </style>
+
+    <style name="STextAppearance.Medium.Black1">
+        <item name="android:textColor">@color/s_text_color_black_1</item>
+    </style>
+
+    <style name="AnimationStyleBottomBak" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+    </style>
+
+    <style name="BottomDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:background">@null</item>-->
+        <item name="android:windowBackground">@color/dailog_color_halfbg</item>
+        <!--<item name="android:backgroundDimEnabled">false</item>-->
+        <item name="android:windowAnimationStyle">@style/AnimationStyleBottomBak</item>
+    </style>
+
+
+    <style name="BottomDialog.AnimationStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+    </style>
+
+
+    <style name="ActivityDialogTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:launchMode">singleTop</item>
+        <item name="android:windowAnimationStyle">@style/notAnimation</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <item name="statusViewBackground">@color/backgroundMain</item>
+    </style>
+
+    <style name="notAnimation">
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+        <item name="android:wallpaperOpenEnterAnimation">@null</item>
+        <item name="android:wallpaperOpenExitAnimation">@null</item>
+        <item name="android:wallpaperCloseEnterAnimation">@null</item>
+        <item name="android:wallpaperCloseExitAnimation">@null</item>
+        <item name="android:wallpaperIntraOpenEnterAnimation">@null</item>
+        <item name="android:wallpaperIntraOpenExitAnimation">@null</item>
+        <item name="android:wallpaperIntraCloseEnterAnimation">@null</item>
+        <item name="android:wallpaperIntraCloseExitAnimation">@null</item>
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+
+    </style>
+
+
+    <style name="GridPasswordView" />
+
+    <style name="GridPasswordView.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="GridPasswordView.EditText" parent="GridPasswordView.TextView">
+        <item name="android:cursorVisible">false</item>
+    </style>
+
+    <style name="GridPasswordView.Divider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+
+
+    <style name="BottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetDialogModal</item>
+    </style>
+
+    <style name="BottomSheetDialogModal" parent="Widget.Design.BottomSheet.Modal">
+        <item name="behavior_peekHeight">500dp</item>
+    </style>
+
+    <style name="BottomSheetDialogTrans" parent="Widget.Design.BottomSheet.Modal">
+
+
+    </style>
+
+
+    <style name="SwitchNormal">
+        <!-- thumb: switch上面滑动的滑块 -->
+        <item name="android:thumb">@drawable/switch_thumb</item>
+        <!-- track: switch的下面的滑道-->
+        <item name="android:track">@drawable/switch_track</item>
+    </style>
+    <!--公共的dialog样式-->
+    <style name="commonDialog" parent="@android:style/Theme.Dialog">
+        <!--Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--是否显示title-->
+        <item name="android:windowNoTitle">true</item>
+        <!--设置dialog的背景-->
+        <item name="android:background">@android:color/transparent</item>
+        <!--显示区域背景是否透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--就是用来控制灰度的值，当为1时，界面除了我们的dialog内容是高亮显示的，dialog以外的区域是黑色的，完全看不到其他内容，系统的默认值是0.5-->
+        <item name="android:backgroundDimAmount">0.5</item>
+        <!--显示区域以外是否使用黑色半透明背景-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="NoAnimationDialog" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+
+    <style name="license_plate_editStyle">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">34dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/contentTitle</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="license_plate_province_textStyle">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:background">@drawable/license_plate_keyboard_text_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+
+    <style name="license_plate_num_textStyle">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:background">@drawable/license_plate_keyboard_text_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/backgroundMain</item>
+        <item name="colorPrimaryDark">@color/backgroundMain</item>
+        <item name="colorAccent">@color/primary</item>
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:textColor">@color/contentTitle</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">
+            false
+        </item>
+
+        <item name="statusViewBackground">@color/backgroundMain</item>
+
+    </style>
+
+    <style name="TranslucentStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 背景色透明 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- 是否有透明属性 -->
+        <item name="android:backgroundDimEnabled">false</item> <!-- 背景是否半透明 -->
+        <item name="android:statusBarColor">@android:color/transparent</item> <!-- 状态栏透明 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item> <!-- activity窗口切换效果 -->
+        <item name="android:activityOpenEnterAnimation">@anim/scale_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/scale_in</item>
+        <item name="android:activityCloseEnterAnimation">@anim/scale_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/scale_in</item>
+    </style>
+
+    <style name="KeepLiveTheme" parent="AppTheme">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="DialogActivityStyle" parent="Theme.AppCompat.Light.Dialog">
+        <!--设置dialog的背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--设置Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!--设置无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:title">@null</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:dialogTitle">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置窗口内容不覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--设置动画-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!--背景是否模糊显示-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--点击外部是否退出->
+<!-        <item name="android:windowCloseOnTouchOutside">false</item>-->
+    </style>
+
+
+    <style name="AppDayNightTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/backgroundMain</item>
+        <item name="colorPrimaryDark">@color/backgroundMain</item>
+        <item name="colorAccent">@color/mainBlue</item>
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">
+            false
+        </item>
+
+        <item name="statusViewBackground">@color/backgroundMain</item>
+    </style>
+
+
+    <style name="AppGrayPage" parent="@style/AppDayNightTheme">
+        <item name="statusViewBackground">@color/transparent</item>
+    </style>
+
+    //====================================== Theme Zhihu ===========================================
+
+    <style name="Matisse.Zhihu" parent="Theme.AppCompat.Light.NoActionBar" tools:ignore="DuplicateDefinition">
+        <item name="colorPrimary">@color/zhihu_primary</item>
+        <item name="colorPrimaryDark">@color/zhihu_primary_dark</item>
+        <item name="toolbar">@style/Toolbar.Zhihu</item>
+        <item name="album.dropdown.title.color">@color/zhihu_album_dropdown_title_text</item>
+        <item name="album.dropdown.count.color">@color/zhihu_album_dropdown_count_text</item>
+        <item name="album.element.color">@color/backgroundMain</item>
+        <item name="album.thumbnail.placeholder">@color/zhihu_album_dropdown_thumbnail_placeholder</item>
+        <item name="album.emptyView">@drawable/ic_empty_zhihu</item>
+        <item name="album.emptyView.textColor">@color/zhihu_album_empty_view</item>
+        <item name="item.placeholder">@color/zhihu_item_placeholder</item>
+        <item name="item.checkCircle.backgroundColor">
+            @color/zhihu_item_checkCircle_backgroundColor
+        </item>
+        <item name="item.checkCircle.borderColor">@color/zhihu_item_checkCircle_borderColor</item>
+        <item name="page.bg">@color/zhihu_page_bg</item>
+        <item name="bottomToolbar.bg">@color/zhihu_bottom_toolbar_bg</item>
+        <item name="bottomToolbar.preview.textColor">@color/zhihu_bottom_toolbar_preview</item>
+        <item name="bottomToolbar.apply.textColor">@color/zhihu_bottom_toolbar_apply</item>
+        <item name="preview.bottomToolbar.back.textColor">
+            @color/zhihu_preview_bottom_toolbar_back_text
+        </item>
+        <item name="preview.bottomToolbar.apply.textColor">
+            @color/zhihu_preview_bottom_toolbar_apply
+        </item>
+        <item name="listPopupWindowStyle">@style/Popup.Zhihu</item>
+        <item name="capture.textColor">@color/zhihu_capture</item>
+
+        <item name="statusViewBackground">@color/backgroundMain</item>
+    </style>
+
+    <style name="Toolbar.Zhihu" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="statusViewBackground">@color/backgroundMain</item>
+    </style>
+
+    <style name="Popup.Zhihu" parent="Widget.AppCompat.Light.ListPopupWindow">
+        <item name="android:popupBackground">@color/zhihu_album_popup_bg</item>
+    </style>
+
+    //===================================== Theme Dracula ==========================================
+
+    <style name="Matisse.Dracula" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/dracula_primary</item>
+        <item name="colorPrimaryDark">@color/dracula_primary_dark</item>
+        <item name="toolbar">@style/Toolbar.Dracula</item>
+        <item name="album.dropdown.title.color">@color/dracula_album_dropdown_title_text</item>
+        <item name="album.dropdown.count.color">@color/dracula_album_dropdown_count_text</item>
+        <item name="album.element.color">@color/backgroundMain</item>
+        <item name="album.thumbnail.placeholder">@color/dracula_album_dropdown_thumbnail_placeholder</item>
+        <item name="album.emptyView">@drawable/ic_empty_dracula</item>
+        <item name="album.emptyView.textColor">@color/dracula_album_empty_view</item>
+        <item name="item.placeholder">@color/dracula_item_placeholder</item>
+        <item name="item.checkCircle.backgroundColor">@color/dracula_item_checkCircle_backgroundColor</item>
+        <item name="item.checkCircle.borderColor">@color/dracula_item_checkCircle_borderColor</item>
+        <item name="page.bg">@color/dracula_page_bg</item>
+        <item name="bottomToolbar.bg">@color/dracula_bottom_toolbar_bg</item>
+        <item name="bottomToolbar.preview.textColor">@color/dracula_bottom_toolbar_preview</item>
+        <item name="bottomToolbar.apply.textColor">@color/dracula_bottom_toolbar_apply</item>
+        <item name="preview.bottomToolbar.back.textColor">@color/dracula_preview_bottom_toolbar_back_text</item>
+        <item name="preview.bottomToolbar.apply.textColor">@color/dracula_preview_bottom_toolbar_apply</item>
+        <item name="android:listPopupWindowStyle">@style/Popup.Dracula</item>
+        <item name="listPopupWindowStyle">@style/Popup.Dracula</item>
+        <item name="capture.textColor">@color/dracula_capture</item>
+        <item name="statusViewBackground">@color/backgroundMain</item>
+    </style>
+
+    <style name="Toolbar.Dracula" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </style>
+
+    <style name="Popup.Dracula" parent="Widget.AppCompat.ListPopupWindow">
+        <item name="android:popupBackground">@color/dracula_album_popup_bg</item>
+    </style>
+</resources>

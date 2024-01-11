@@ -1,0 +1,57 @@
+apply plugin: 'com.android.library'
+
+android {
+    buildToolsVersion "30.0.3"
+    namespace 'it.sephiroth.android.library.exif2'
+    compileSdkVersion rootProject.ext.globalCompileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.globalMinSdkVersion
+        targetSdkVersion rootProject.ext.globalTargetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    defaultConfig {
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+//    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation androidDependencies.appcompat_v7
+//    implementation 'com.google.android.material:material:1.2.1'
+    implementation androidDependencies.material
+    implementation androidDependencies.constraintlayout
+//    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+//    testImplementation 'junit:junit:4.13.2'
+    testImplementation globalDependencies.junit
+//    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation globalDependencies.junittest
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    androidTestImplementation androidDependencies.espresso_core
+}

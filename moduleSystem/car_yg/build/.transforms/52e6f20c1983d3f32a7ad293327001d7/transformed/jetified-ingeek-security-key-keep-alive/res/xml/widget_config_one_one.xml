@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialKeyguardLayout="@layout/widget_layout_one_one"
+    android:initialLayout="@layout/widget_layout_one_one"
+    android:minWidth="40.0dip"
+    android:minHeight="40.0dip"
+    android:updatePeriodMillis="1800000"
+    android:previewImage="@drawable/ic_widget_connect_btn"
+    android:widgetCategory="home_screen|keyguard|searchbox" />

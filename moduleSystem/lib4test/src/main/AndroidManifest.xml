@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application>
+
+        <provider
+            android:authorities="${applicationId}.lib4test.hycanApm"
+            android:name="com.gac.nioapp.test.init.DebugProvider"/>
+        <activity android:name="com.gac.nioapp.test.activity.QrScanTestActivity" />
+
+    </application>
+
+
+</manifest>

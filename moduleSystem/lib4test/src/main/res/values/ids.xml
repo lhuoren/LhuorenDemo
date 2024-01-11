@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="last_click_time" type="id"/>
+    <item type="id" name="qrcode_camera_preview" />
+
+    <item name="layout_for_test" type="id"/>
+    <item name="layout_root_act" type="id"/>
+    <item name="banner_indicatorId" type="id" />
+    <item name="emojiPanelId" type="id"></item>
+    <item name="are_toolbar" type="id"></item>
+    <item name="are_scrollview" type="id"></item>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_bottom_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundMain"
+    android:orientation="vertical">
+
+    <com.gac.commonui.widget.DrawableCenterTextView
+        android:id="@+id/tv_bottom_item4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/backgroundMain"
+        android:gravity="center|center_vertical"
+        android:drawablePadding="@dimen/dimen_6"
+        android:text="item3"
+        android:visibility="gone"
+        android:textColor="@color/contentTitle"
+        android:textSize="15dp" />
+
+
+    <com.gac.commonui.widget.DrawableCenterTextView
+        android:id="@+id/tv_bottom_item3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/backgroundMain"
+        android:gravity="center|center_vertical"
+        android:drawablePadding="@dimen/dimen_6"
+        android:text="item3"
+        android:visibility="gone"
+        android:textColor="@color/contentTitle"
+        android:textSize="15dp" />
+
+
+
+    <com.gac.commonui.widget.DrawableCenterTextView
+        android:id="@+id/tv_bottom_item2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/backgroundMain"
+        android:gravity="center|center_vertical"
+        android:text="item2"
+        android:drawablePadding="@dimen/dimen_6"
+        android:textColor="@color/contentTitle"
+        android:textSize="15dp"
+        android:visibility="gone" />
+
+
+
+    <com.gac.commonui.widget.DrawableCenterTextView
+        android:id="@+id/tv_bottom_item1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/backgroundMain"
+        android:drawablePadding="@dimen/dimen_6"
+        android:gravity="center|center_vertical"
+        android:text="item1"
+        android:textColor="@color/contentTitle"
+        android:textSize="15dp"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/tv_bottom_line0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_5"
+        android:background="@color/backgroundPlaceholder" />
+
+    <TextView
+        android:id="@+id/tv_bottom_item0"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/backgroundMain"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/contentTitle"
+        android:textSize="15dp"
+        android:visibility="visible" />
+</LinearLayout>

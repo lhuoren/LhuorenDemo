@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loBackgound"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/overlayView"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/loButtonBackgound">
+            <FrameLayout
+
+                android:layout_width="@dimen/dimen_280"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/loButtonBackgound"
+                android:layout_gravity="center">
+                <ImageView
+                    android:id="@+id/layout_content"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="@dimen/dimen_280"
+                    android:maxHeight="@dimen/dimen_500"
+                    android:src="@drawable/ic_default_photo"/>
+            </FrameLayout>
+        </FrameLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/loButtonBackgound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:background="@color/backgroundMain">
+            <LinearLayout
+                android:id="@+id/loTop"
+                android:layout_width="match_parent"
+                android:layout_height="112dp"
+                android:background="@color/backgroundPlaceholder"
+                android:paddingLeft="@dimen/paddinglf"
+                android:paddingRight="@dimen/paddinglf"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/loWeChat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/postshare_icon_wechat" />
+
+                    <TextView
+                        android:id="@+id/tv_wechat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/share_wechat"
+                        android:textColor="@color/contentSub"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/loSavePost"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/postshare_icon_download" />
+
+                    <TextView
+                        android:id="@+id/tv_wechat_pyq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/share_save_poster"
+                        android:textColor="@color/contentSub"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/loWeibo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/share_weibo" />
+
+                    <TextView
+                        android:id="@+id/share_weibo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/share_weibo"
+                        android:textColor="@color/contentSub"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/loPoster"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/share_icon_blue_hb" />
+
+                    <TextView
+                        android:id="@+id/share_poster"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/share_new_poster"
+                        android:textColor="@color/contentSub"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/btn_close"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:textColor="#222222"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:background="@color/backgroundMain"
+                android:textSize="@dimen/s_text_size_medium"
+                android:text="@string/cancel"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

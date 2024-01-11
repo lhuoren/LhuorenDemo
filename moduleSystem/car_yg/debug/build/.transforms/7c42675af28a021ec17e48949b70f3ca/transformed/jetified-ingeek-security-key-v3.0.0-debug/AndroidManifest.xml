@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ingeek"
+    android:versionCode="23"
+    android:versionName="3.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="28" />
+
+    <!-- Android 6.0 单元测试需要 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- 蓝牙 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- 声明仅支持低功耗蓝牙设备 -->
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <!-- 允许网络请求 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 允许程序设置内置SD卡的写权限 -->
+    <!--
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    -->
+
+    <uses-permission android:name="com.ingeek.key.Watchmen" />
+
+    <application>
+        <receiver
+            android:name="com.ingeek.key.security.WatchmenBroadcastReceiver"
+            android:permission="com.ingeek.key.Watchmen" >
+            <intent-filter>
+                <action android:name="com.ingeek.key.security.ACTION_WATCHMEN_BROADCAST" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.ingeek.key.b.O00000o"
+            android:authorities="${applicationId}.ingeek.contextprovider"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,62 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="user_jenkins" tools:ignore="ExtraTranslation">jenkins包</string>
+    <string name="user_lhr" tools:ignore="ExtraTranslation">赖工</string>
+    <string name="user_fly" tools:ignore="ExtraTranslation">贺工</string>
+    <string name="user_min" tools:ignore="ExtraTranslation">李工</string>
+    <string name="user_qiang" tools:ignore="ExtraTranslation">刘工</string>
+    <string name="user_cheng" tools:ignore="ExtraTranslation">陈工</string>
+    <string name="switch_environment" tools:ignore="ExtraTranslation">切换环境</string>
+    <string name="app_prd" tools:ignore="ExtraTranslation">正式环境</string>
+    <string name="app_dev" tools:ignore="ExtraTranslation">开发环境</string>
+    <string name="app_test" tools:ignore="ExtraTranslation">测试环境</string>
+    <string name="app_pre" tools:ignore="ExtraTranslation">预发布环境</string>
+    <string name="switch_test_account" tools:ignore="ExtraTranslation">切换账号</string>
+    <string name="open_flipper" tools:ignore="ExtraTranslation">打开Flipper</string>
+    <string name="mock_park_out">Z03泊出流程模拟</string>
+    <string name="mock_park_in">Z03泊入流程模拟</string>
+    <string name="park_spa">Spa泊车流程触发</string>
+    <string name="park_spa_2d0">Spa2.0泊车流程触发</string>
+    <string name="rn_dev_enable" tools:ignore="ExtraTranslation">RNDEV(开)</string>
+    <string name="rn_dev_disable" tools:ignore="ExtraTranslation">RNDEV(关)</string>
+    <string name="key2log_act">一键登录(ACT)</string>
+    <string name="key2log_dialog">一键登录(Dialog)</string>
+
+    <string name="qr_scan_result_null">未发现二维码</string>
+    <string name="android_os_low_version">当前手机系统版本过低，不支持继续操作！</string>
+    <string name="loading_str">加载中</string>
+    <string name="button_ok">我知道了</string>
+    <string name="album_name_all">全部</string>
+    <string name="alert_no_album_permission">缺少访问相册权限，请前往设置中开启</string>
+    <string name="error_file_type">不支持的文件类型</string>
+    <string name="alert_no_camera_permission">缺少开启相机权限，请前往设置中开启</string>
+
+    <string name="share_save_poster">保存到本地</string>
+    <string name="share_new_poster">生成海报</string>
+    <string name="scan_again">重新扫码</string>
+    <string name="share_success">分享成功</string>
+    <string name="share_wechat">分享至微信</string>
+    <string name="share_weibo">分享至微博</string>
+    <string name="share_wechatpyq">分享朋友圈</string>
+
+    <!--支付-->
+    <string name="pay_form">支付详情</string>
+    <string name="pay_pre_money">待支付金额</string>
+    <string name="pay_method">支付方式</string>
+    <string name="wx_pay">微信支付</string>
+    <string name="ali_pay">支付宝支付</string>
+    <string name="bank_pay">银行电汇转账</string>
+    <string name="pay_now">确认支付</string>
+    <string name="action_free_tib">本次不支付则放弃抽奖机会</string>
+
+    <string name="text_album_name">%1$s(%2$d)</string>
+    <string name="error_over_count">最多只能选择 %d 个文件</string>
+    <string name="error_type_conflict">不能同时选择图片和视频</string>
+    <string name="error_no_video_activity">没有支持视频预览的应用</string>
+    <string name="photo_grid_capture">拍一张</string>
+    <string name="button_confirm_default">完成</string>
+    <string name="button_confirm_1">完成(%d)</string>
+    <string name="button_preview">预览</string>
+    <string name="empty_text">还没有图片或视频</string>
+    <string name="button_apply_default">使用</string>
+    <string name="button_apply">使用(%1$d)</string>
+</resources>

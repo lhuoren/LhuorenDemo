@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/backgroundMain">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:duplicateParentState="true" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_delect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:visibility="invisible"/>
+
+        <EditText
+            android:id="@+id/edit_query"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ll_back"
+            android:layout_toLeftOf="@id/iv_delect"
+            android:background="@null"
+            android:textColor="@color/topbar_color_righttext_light"
+            android:textColorHint="#ff747a86"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:imeOptions="actionSearch"
+            android:paddingRight="16dp"
+            android:textSize="18.67dp"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@id/iv_delect"
+            android:layout_toRightOf="@id/ll_back"
+            android:background="@null"
+            android:textColor="@color/contentTitle"
+            android:includeFontPadding="false"
+            android:textSize="10dp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

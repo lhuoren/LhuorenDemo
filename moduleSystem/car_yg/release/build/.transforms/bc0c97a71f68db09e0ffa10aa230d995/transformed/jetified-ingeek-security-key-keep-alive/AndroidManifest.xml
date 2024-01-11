@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ingeek.vck.alive"
+    android:versionCode="23"
+    android:versionName="3.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.ingeek.vck.alive.service.DigitalKeyService" />
+
+    <application>
+        <service
+            android:name="com.ingeek.vck.alive.service.DigitalKeyService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="com.ingeek.vck.alive.service.DigitalKeyService"
+            android:process=":alive" >
+            <intent-filter>
+                <action android:name="com.ingeek.vck.alive.service.DigitalKeyService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.ingeek.vck.alive.receiver.BootBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.ingeek.vck.alive.service.ACTION_SDK_HEARTBEAT" />
+                <action android:name="com.ingeek.vck.alive.service.ACTION_CONNECT_SUCCESS" />
+                <action android:name="com.ingeek.vck.alive.service.ACTION_DISCONNECT_MANUAL" />
+                <action android:name="com.ingeek.vck.alive.service.ACTION_DISCONNECT_AUTO" />
+                <action android:name="com.ingeek.vck.alive.service.ACTION_START_CONNECT" />
+                <action android:name="com.ingeek.vck.alive.service.ACTION_CONNECT_FAILED" />
+                <action android:name="com.ingeek.vck.alive.service.ACTION_BLUETOOTH_OPEN" />
+                <action android:name="com.ingeek.vck.alive.service.ACTION_BLUETOOTH_OFF" />
+                <action android:name="com.ingeek.vck.alive.service.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

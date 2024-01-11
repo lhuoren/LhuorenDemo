@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_bottom_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundMain"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_15"
+        >
+        <TextView
+            android:id="@+id/tv__item"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:background="@color/backgroundMain"
+            android:text="5 分钟"
+            android:gravity="center_vertical"
+            android:textColor="@color/contentTitle"
+            android:textSize="15dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv__item"
+            android:layout_width="@dimen/dimen_18"
+            android:layout_height="@dimen/dimen_18"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_right_select"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/tv_bottom_line2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_s"
+        android:background="@color/line"
+        />
+
+</LinearLayout>

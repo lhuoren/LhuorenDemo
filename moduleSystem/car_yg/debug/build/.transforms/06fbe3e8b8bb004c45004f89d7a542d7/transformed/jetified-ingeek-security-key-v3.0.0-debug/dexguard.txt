@@ -1,0 +1,8 @@
+
+
+
+-stripnativelibrarysections !jni/arm64-v8a/libdf5a.so,!jni/armeabi-v7a/libdf5a.so,!lib/arm64-v8a/libdf5a.so,!lib/armeabi-v7a/libdf5a.so,dummyfile
+
+
+-keepresourcefiles com/b/a/b/a-,com/b/a/b/b-,com/ingeek/security/b/d/c-,com/ingeek/security/b/d/d-,jni/arm64-v8a/libdf5a.so,jni/armeabi-v7a/libdf5a.so,lib/arm64-v8a/libdf5a.so,lib/armeabi-v7a/libdf5a.so
+

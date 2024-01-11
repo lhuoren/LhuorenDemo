@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.greenrobot.greendao'
+android {
+    namespace 'cn.gacnio.it.database'
+    compileSdkVersion rootProject.ext.globalCompileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.globalMinSdkVersion
+        targetSdkVersion rootProject.ext.globalTargetSdkVersion
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            consumerProguardFile 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            consumerProguardFile 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation mvvmDependencies.appcompat
+//    testImplementation 'junit:junit:4.12'
+    testImplementation globalDependencies.junittest
+    implementation globalDependencies.converter_gson
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+//    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation androidDependencies.espresso_core
+    api globalDependencies.greendao
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+//    implementation mvvmDependencies.kotlin
+}
+greendao {
+    schemaVersion 7 // 数据库版本号
+    daoPackage 'cn.gacnio.it.database.greendao' // 设置DaoMaster、DaoSession、Dao包名
+}

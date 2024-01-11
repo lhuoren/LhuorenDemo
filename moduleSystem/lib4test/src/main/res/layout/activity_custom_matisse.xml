@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundMain"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/backgroundMain"
+        android:fitsSystemWindows="true"
+        app:contentInsetStart="0dp"
+        app:titleMargin="0dp"
+        app:contentInsetEnd="0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/common_icon_colse_gb"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <com.gac.nioapp.test.view.MediumBoldTextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/contentTitle"
+                android:textSize="17dp"
+                android:text="全部"
+                />
+
+            <ImageView
+                android:id="@+id/iv_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_triangle_down"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            tools:text="完成"
+            android:textColor="@color/contentTitle"
+            android:textSize="15dp"
+            android:visibility="gone"
+            android:layout_gravity="right"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:id="@+id/split_divider_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"
+        />
+ <!--   <LinearLayout
+        android:id="@+id/ll_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+-->
+
+    <FrameLayout
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/empty_view_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/empty_text"
+            android:textColor="@color/contentTitle"
+            android:textSize="16dp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line"
+                />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/backgroundMain"
+                >
+
+                <TextView
+                    android:layout_marginRight="17dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/bg_button_radius_22"
+                    android:id="@+id/tv_confirm"
+                    android:layout_width="70dp"
+                    android:layout_height="32dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/button_text_color"
+                    android:text="完成"
+                    android:gravity="center"
+                    />
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/view_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:alpha="0.5"
+            android:visibility="gone"
+            />
+
+    </FrameLayout>
+
+
+</LinearLayout>

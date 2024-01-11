@@ -1,0 +1,156 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: 'appconfig.gradle'
+buildscript {
+//    ext.kotlinVersion = '1.3.72'
+    ext {
+        buildToolsVersion = "33.0.0"
+        minSdkVersion = 21
+        compileSdkVersion = 33
+        targetSdkVersion = 33
+
+        // We use NDK 23 which has both M1 support and is the side-by-side NDK version from AGP.
+        ndkVersion = "23.1.7779620"
+
+        kotlinVersion = '1.6.10'
+
+        aliyun_release = "https://packages.aliyun.com/maven/repository/2225126-release-BO6KRh/"
+        aliyun_snapshot = "https://packages.aliyun.com/maven/repository/2225126-snapshot-oR36fR/"
+        aliyun_username = '629491c8acd13cfd502349e4'
+        aliyun_password = 'RaHt4bkrYWg9'
+
+
+        /*
+            sdk版本号，由version+(日期)-SNAPSHOT格式显示，如3.0.0.14-(0131)-SNAPSHOT
+            正式出包不携带SNAPSHOT后缀
+         */
+        groupid = "net.easyconn"
+
+        easyconn_version = "4.1.0.1012-SNAPSHOT"
+
+        externalEc = "$groupid:ec:$easyconn_version"
+        externalCommon = "$groupid:common:$easyconn_version"
+        externalTheme = "$groupid:theme:$easyconn_version"
+        externalThemePackage = "$groupid:theme_yf08:4.1.0-SNAPSHOT"
+        externalVm = "$groupid:vm:$easyconn_version"
+        //平行世界sdk
+        vmos_sdk_version = "2.1.8-beta13-android12"
+
+        eclicense_plugin_version = "1.0.29"
+
+        //平行世界sdk
+        vmos_plugin_version = "1.2.8-beta12"
+
+    }
+    repositories {
+
+        mavenLocal()
+
+        if (project.hasProperty("LOCAL_REPO_DIR")) {
+            maven {
+                name = 'rnLocalRepoDir'
+                url = "$LOCAL_REPO_DIR"
+            }
+        }
+
+        google()
+
+        maven { url 'https://developer.huawei.com/repo/' }
+
+        mavenCentral()
+
+        maven {
+            url "https://oss.sonatype.org/content/groups/public"
+        }
+        maven { url 'https://jitpack.io' }
+
+    }
+    dependencies {
+        //不能升级到4.0.0,否则多渠道打包会不支持，详情插卡Issues：https://github.com/Tencent/VasDolly/issues/104
+        classpath 'com.android.tools.build:gradle:7.3.1'//lwh
+        //The Android Gradle plugin supports only kotlin-android-extensions Gradle plugin version 1.6.20 and higher.
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}"
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.3.1'
+        //GrowingIO 无埋点 SDK
+        classpath 'com.growingio.android:vds-gradle-plugin:autotrack-2.10.1'
+        classpath "org.jetbrains.dokka:dokka-gradle-plugin:1.4.30"
+
+        classpath 'com.google.code.gson:gson:2.8.5'
+
+        //hycan仓库
+//        classpath 'io.github.didi.dokit:dokitx-plugin:3.7.1'
+        //https://github.com/didi/DoKit/issues/1141
+        classpath "com.didiglobal.booster:booster-gradle-plugin:4.16.2"
+
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+
+        if (project.hasProperty("LOCAL_REPO_DIR")) {
+            maven {
+                name = 'rnLocalRepoDir'
+                url = "$LOCAL_REPO_DIR"
+            }
+        }
+
+        google()
+
+        maven { url 'https://developer.huawei.com/repo/' }
+
+//        mavenCentral()
+
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' } //gradle-plugin
+        maven { url 'https://maven.aliyun.com/repository/public' } //public
+        maven { url 'https://maven.aliyun.com/repository/jcenter'} //jcenter
+        maven {
+            url "https://oss.sonatype.org/content/groups/public"
+        }
+
+
+        // 配置google exoplayer的仓库地址
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
+        maven { url 'https://jitpack.io' }
+//        mavenLocal()
+
+        //亿联maven阿里云仓库
+        maven {
+            credentials {
+                username aliyun_username
+                password aliyun_password
+            }
+            url aliyun_release
+        }
+        maven {
+            credentials {
+                username aliyun_username
+                password aliyun_password
+            }
+            url aliyun_snapshot
+        }
+    }
+}
+
+project.ext {
+    excludeAppGlideModule = true
+}
+//apply from: './gradle_src/build.gradle'
+
+subprojects {
+    project.configurations.all { configuration ->
+        resolutionStrategy.force globalDependencies.okhttp
+        resolutionStrategy.force mvvmDependencies.appcompat
+        resolutionStrategy.force 'net.easyconn:echttp:3.0.0.8'
+
+        resolutionStrategy.force "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+        resolutionStrategy.force "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+        resolutionStrategy.force "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+
+        resolutionStrategy.force globalDependencies.okhttp
+    }
+}
+
+
+

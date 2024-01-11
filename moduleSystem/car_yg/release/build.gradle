@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('ingeek-security-key-v3.0.0-release.aar'))

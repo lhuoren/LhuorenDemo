@@ -1,0 +1,8 @@
+
+
+
+-stripnativelibrarysections !jni/arm64-v8a/libc312.so,!jni/armeabi-v7a/libc312.so,!lib/arm64-v8a/libc312.so,!lib/armeabi-v7a/libc312.so,dummyfile
+
+
+-keepresourcefiles com/e/c/c/a-,com/e/c/c/b-,com/ingeek/security/c/e/c-,com/ingeek/security/c/e/d-,jni/arm64-v8a/libc312.so,jni/armeabi-v7a/libc312.so,lib/arm64-v8a/libc312.so,lib/armeabi-v7a/libc312.so
+

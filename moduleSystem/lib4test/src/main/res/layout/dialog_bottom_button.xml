@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_bottom_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundMain"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginHorizontal="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <com.gac.nioapp.test.view.MediumBoldTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:lineHeight="@dimen/dimen_32"
+            android:textColor="@color/contentTitle"
+            android:textSize="@dimen/dimen_20"
+            tools:text="标题" />
+
+        <ImageView
+            android:id="@+id/tvClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            app:srcCompat="@drawable/icon_close" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvNotices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:lineHeight="@dimen/dimen_22"
+        android:text=""
+        android:textColor="@color/contentSub"
+        android:textSize="@dimen/dimen_14"
+        android:visibility="gone"
+        tools:text="12312312"
+        tools:visibility="visible" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_marginBottom="@dimen/dimen_35">
+
+        <TextView
+            android:id="@+id/tvButton"
+            style="@style/HycanPButton"
+            android:layout_gravity="center"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="@dimen/dimen_15"
+            tools:text="确认" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

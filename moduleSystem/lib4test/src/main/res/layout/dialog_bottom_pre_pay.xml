@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_bottom_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundMainView"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_12">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="0dp">
+
+        <ImageView
+            android:id="@+id/tv_close"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center|end"
+            android:layout_margin="8dp"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ico_left_close" />
+
+        <com.bigkoo.katafoundation.view.MediumBoldTextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:gravity="center"
+            android:text="@string/pay_form"
+            android:textColor="@color/contentTitle"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:bold="false" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/pay_pre_money"
+            android:textColor="@color/contentDescribe"
+            android:textSize="16dp" />
+
+        <com.bigkoo.katafoundation.view.MediumBoldTextView
+            android:id="@+id/tv_pre_money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/contentTitle"
+            android:textSize="18dp"
+            app:bold="true"
+            tools:text="¥ 5,000" />
+
+        <ImageView
+            android:id="@+id/img_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dimen_3"
+            android:layout_toLeftOf="@id/tv_pre_money"
+            android:visibility="gone"
+            app:srcCompat="@drawable/shop_pic_jf_black_32"
+            tools:visibility="visible" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/wx_pay_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ico_wechatpay"
+            android:drawablePadding="@dimen/dimen_8"
+            android:gravity="center|start"
+            android:text="@string/wx_pay"
+            android:textColor="@color/contentTitle"
+            android:textSize="@dimen/dimen_15" />
+
+        <RadioButton
+            android:id="@+id/wx_pay"
+            android:layout_width="18dp"
+            android:layout_height="@dimen/dimen_18"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_radio"
+            android:button="@null"
+            android:checked="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ali_pay_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/pay_icon_zfb"
+            android:drawablePadding="@dimen/dimen_8"
+            android:gravity="center|start"
+            android:text="@string/ali_pay"
+            android:textColor="@color/contentTitle"
+            android:textSize="@dimen/dimen_15" />
+
+        <RadioButton
+            android:id="@+id/ali_pay"
+            android:layout_width="@dimen/dimen_18"
+            android:layout_height="@dimen/dimen_18"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_radio"
+            android:button="@null"
+            android:checked="false" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bank_pay_layout"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:paddingLeft="@dimen/paddinglf"
+        android:paddingRight="@dimen/paddinglf">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/icon_sqsczhuanzhang"
+            android:drawablePadding="@dimen/dimen_9"
+            android:gravity="center|start"
+            android:text="@string/bank_pay"
+            android:textColor="@color/contentTitle"
+            android:textSize="@dimen/dimen_14" />
+
+        <RadioButton
+            android:id="@+id/bank_pay"
+            android:layout_width="@dimen/dimen_18"
+            android:layout_height="@dimen/dimen_18"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_radio"
+            android:button="@null"
+            android:checked="false" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_free_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:text="@string/action_free_tib"
+        android:textColor="@color/contentDescribe"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvPay"
+        style="@style/HycanPBottomButton"
+        android:onClick="onLogin"
+        android:text="@string/pay_now" />
+
+</LinearLayout>
